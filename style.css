@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    padding: 25px;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family:'Source Code Pro', monospace,sans-serif;
+}
+  h1,h2, h3{
+    
+    color: #ffffff;
+    text-align: center;
+  }
+  /******************* LOADING *********************/
+
+#load {
+  position:absolute;
+  width:600px;
+  height:36px;
+  left:50%;
+  top:40%;
+  margin-left:-300px;
+  overflow:visible;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  cursor:default;
+}
+
+#load div {
+  position:absolute;
+  width:20px;
+  height:36px;
+  opacity:0;
+  font-family:Helvetica, Arial, sans-serif;
+  animation:move 2s linear infinite;
+  -o-animation:move 2s linear infinite;
+  -moz-animation:move 2s linear infinite;
+  -webkit-animation:move 2s linear infinite;
+  transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  color:#26f4f4;
+}
+
+#load div:nth-child(2) {
+  animation-delay:0.2s;
+  -o-animation-delay:0.2s;
+  -moz-animation-delay:0.2s;
+  -webkit-animation-delay:0.2s;
+}
+#load div:nth-child(3) {
+  animation-delay:0.4s;
+  -o-animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+}
+#load div:nth-child(4) {
+  animation-delay:0.6s;
+  -o-animation-delay:0.6s;
+  -moz-animation-delay:0.6s;
+  -webkit-animation-delay:0.6s;
+}
+#load div:nth-child(5) {
+  animation-delay:0.8s;
+  -o-animation-delay:0.8s;
+  -moz-animation-delay:0.8s;
+  -webkit-animation-delay:0.8s;
+}
+#load div:nth-child(6) {
+  animation-delay:1s;
+  -o-animation-delay:1s;
+  -moz-animation-delay:1s;
+  -webkit-animation-delay:1s;
+}
+#load div:nth-child(7) {
+  animation-delay:1.2s;
+  -o-animation-delay:1.2s;
+  -moz-animation-delay:1.2s;
+  -webkit-animation-delay:1.2s;
+}
+
+@keyframes move {
+  0% {
+    left:0;
+    opacity:0;
+  }
+  35% {
+    left: 41%; 
+    -moz-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -moz-transform:rotate(0deg); 
+    -webkit-transform:rotate(0deg); 
+    -o-transform:rotate(0deg);
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  100% {
+    left:100%; 
+    -moz-transform:rotate(-180deg); 
+    -webkit-transform:rotate(-180deg); 
+    -o-transform:rotate(-180deg); 
+    transform:rotate(-180deg);
+    opacity:0;
+  }
+}
+
+@-moz-keyframes move {
+  0% {
+    left:0; 
+    opacity:0;
+  }
+  35% {
+    left:41%; 
+    -moz-transform:rotate(0deg); 
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -moz-transform:rotate(0deg); 
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  100% {
+    left:100%; 
+    -moz-transform:rotate(-180deg); 
+    transform:rotate(-180deg);
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    left:0; 
+    opacity:0;
+  }
+  35% {
+    left:41%; 
+    -webkit-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -webkit-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  100% {
+    left:100%;
+    -webkit-transform:rotate(-180deg); 
+    transform:rotate(-180deg); 
+    opacity:0;
+  }
+}
+
+@-o-keyframes move {
+  0% {
+    left:0; 
+    opacity:0;
+  }
+  35% {
+    left:41%; 
+    -o-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -o-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  100% {
+    left:100%; 
+    -o-transform:rotate(-180deg); 
+    transform:rotate(-180deg); 
+    opacity:0;
+  }
+}
+  /*************** INTRO ****************/
+  .intro{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 500px;
+  }
+  .intro h3{
+display: flex;
+align-items: end;
+margin-right: 10px;
+  }
+
+.title {
+    margin: auto;
+    display: flex;
+}
+div{
+text-align: center;
+
+}
+/*********************** MAIN **************************/
+  main{
+    margin: auto;
+    width: 80rem;
+    height: 26rem;
+    background: rgb(36, 32, 32);
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.text{
+    padding: 50px;
+    width: 50rem;
+    height: 20rem;
+    color: white;
+}
+  .dark-mode {
+    background-color:rgb(36, 32, 32);
+    color: white;
+  }
+.dark-mode .content {
+    color:rgb(36, 32, 32);
+}
+.container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .box{
+    position:relative ;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
+}
+.container .box:hover .imgBox{
+    transform:translate(-1.5rem,-3.5rem);
+}
+/*.container .box:hover .content{
+    transform:translate(3.5rem,3.5rem);
+}*/
+.content{
+text-align: center;
+padding: 10px;
+}
+.content h2{
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+    font-style: italic;
+}
+.box{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.9s ease-in-out;
+}
+.imgBox img{
+    background-image: url(https://randomuser.me/api/portraits/men/3.jpg);  /*** DARK MODE IMG ***/
+    background-size: cover;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+}
+/****************** SKILLS **********************/
+.skills{
+    margin: auto;
+    background-color:rgb(36, 32, 32);
+    width: 80rem;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+/******************* HOBBY **************************/
+.hobby{
+    margin: 50px auto;
+    background-color:rgb(36, 32, 32);
+    width: 80rem;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+/************** GOOGLE MAP *******************/
+.location{
+    margin: auto;
+    background-color:rgb(36, 32, 32);
+    width: 80rem;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.location h1{
+    color: white;
+}
+/***************** FOOTER ************************/
+footer{
+    background-color: rgb(36, 32, 32);
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+    display:grid;
+    place-content: center;
+    border-top: 1px solid #ffffff;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+li{
+    padding: 10px;
+}
