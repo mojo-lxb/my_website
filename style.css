@@ -20,7 +20,6 @@ body {
   /********************** FADE DOWN ***********************/
   #fadeDown {
 margin: 2em auto;
-background-color: red;
 display: flex;
 padding: 0;
 max-width: 600px;
@@ -33,25 +32,24 @@ animation: fadeIn 1s ease-in both;
     }
     
     #fadeDown  {
-animation-delay: 2s;
+animation-delay: 3s;
     }
 
     
-    @keyframes fadeDown {
+    @keyframes fadeIn {
 from {
 opacity: 0;
 transform: translate3d(0, -20%, 0);
 }
 to {
 opacity: 1;
-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 20, 0);
 }
     }
     /************************ FADE UP *****************************/
     #fadeUp {
       margin: 2em auto;
       display: flex;
-      background-color: red;
       padding: 0;
       max-width: 600px;
       height: 15em;
@@ -63,11 +61,11 @@ transform: translate3d(0, 0, 0);
           }
           
           #fadeUp  {
-      animation-delay: 2s;
+      animation-delay: 1s;
           }
       
           
-          @keyframes fadeUp {
+          @keyframes fadeIn {
       from {
       opacity: 0;
       transform: translate3d(0, -20%, 0);
