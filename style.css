@@ -28,7 +28,7 @@ max-width: 600px;
 text-align: center;
 margin: auto;
 opacity: 0;
-animation: fadeIn 1s ease-in both;
+animation: fadeDown 1s ease-in both;
     }
     #fadedown h3{
         display: flex;
@@ -40,7 +40,7 @@ animation-delay: 3s;
     
     }
     
-    @keyframes fadeIn {
+    @keyframes fadeDown {
 from {
 opacity: 0;
 transform: translate3d(0, +50%, 0);
