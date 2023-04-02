@@ -1,160 +1,148 @@
+/********************* GENERAL ************************/
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
 }
+
 body {
     padding: 25px;
     color: #ffffff;
     background-color: black;
     font-size: 25px;
     font-family:'Source Code Pro', monospace,sans-serif;
-
 }
-  h1,h2, h3{
-    
+
+h1,h2, h3{
     color: #ffffff;
-    text-align: center;
-    
-  }
+    text-align: center;    
+}
 
   /********************** FADE DOWN ***********************/
-  #fadeDown {
-margin: 2em auto;
-display: flex;
-justify-content: center;
-max-width: 600px;
-text-align: center;
-margin: auto;
-opacity: 0;
-animation: fadeDown 1s ease-in both;
-    }
-    #fadedown h3{
-        display: flex;
-        align-items: end;
-    }
-    
-    #fadeDown  {
-animation-delay: 3s;
-    
-    }
-    
-    @keyframes fadeDown {
-from {
-opacity: 0;
-transform: translate3d(0, +50%, 0);
+#fadeDown {
+    opacity: 0;
+    animation: fadeDown 1s ease-in both;
 }
-to {
-opacity: 1;
-transform: translate3d(0, 0, 0);
-}
-    }
 
-
-    /************************ FADE UP *****************************/
-    #fadeUp { 
-      max-width: 600px;
-      text-align: center;
-      margin: auto;
-      padding: 15px;
-
-      opacity: 0;
-      animation: fadeUp 1s ease-in both;
-          }
-          #fadeUp span{
-            margin-left: 10px;
-          }
-          #fadeUp  {
-      animation-delay: 1s;
-          }
-      
-          
-          @keyframes fadeUp {
-      from {
-      opacity: 0;
-      transform: translate3d(0,-20%, 0);
-      }
-      to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-      }
-          }
-  
-  /*************** INTRO ****************/
-  .intro{
-    display: grid;
-    place-content: center;
-    width: 100%;
-    max-width: 1800px;
-    height: 600px;
-  }
-  .intro h3{
+#fadedown h3 {
     display: flex;
     align-items: end;
-    margin-right: 10px;
-  }
+}
+    
+#fadeDown {
+    animation-delay: 3s;
+}
+    
+@keyframes fadeDown {
+from {
+    opacity: 0;
+    transform: translate3d(0, +50%, 0);
+}
+to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+    }
+
+/************************ FADE UP *****************************/
+#fadeUp { 
+    opacity: 0;
+    animation: fadeUp 1s ease-in both;
+}
+
+#fadeUp span{
+    margin-left: 10px;
+}
+
+#fadeUp {
+    animation-delay: 2s;
+}
+    
+@keyframes fadeUp {
+from {
+    opacity: 0;
+    transform: translate3d(0,-80%, 0);
+}
+to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+    }
+  
+  /*************** INTRO ****************/
+.intro{
+    height: 600px;
+}
+
+.intro h3{
+    display: flex;
+    align-items: end;
+}
 
 .title {
     margin: auto;
     display: flex;
-    }
+}
 /*********************** MAIN **************************/
-  main{
+main{
     margin: auto;
-    width: 80rem;
-    height: 26rem;
     background: rgb(36, 32, 32);
-    display: flex;
-    justify-content: center;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
+
 .text{
-    padding: 50px;
-    width: 50rem;
-    height: 20rem;
     color: white;
 }
-  .dark-mode {
+
+.dark-mode {
     background-color:rgb(36, 32, 32);
     color: white;
-  }
+}
+
 .dark-mode .content {
     color:rgb(36, 32, 32);
 }
+
 .container{
     position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
-
 }
+
 .container .box{
     position:relative ;
     width: 16rem;
     height: 19.5rem;
     margin: 3rem;
 }
+
 .container .box:hover .imgBox{
     transform:translate(-1.5rem,-3.5rem);
 }
+
 .content{
 text-align: center;
 padding: 10px;
 }
+
 .content h2{
     font-size: 16px;
     font-weight: bolder;
     color: black;
     font-style: italic;
 }
+
 .box{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: end;
 }
+
 .imgBox{
     position: absolute;
     top: 0;
@@ -164,6 +152,7 @@ padding: 10px;
     z-index: 2;
     transition: all 0.9s ease-in-out;
 }
+
 .imgBox img{
     background-image: url(img/photo-cv.png) ; /*** DARK MODE IMG ***/
     background-position: center;
@@ -174,45 +163,35 @@ padding: 10px;
     object-fit: cover;
     resize: both;
 }
+
 /****************** SKILLS **********************/
 .skills{
     margin: auto;
     background-color:rgb(36, 32, 32);
-    width: 80rem;
-    height: 26rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
+
 /******************* HOBBY **************************/
 .hobby{
-    margin: 50px auto;
+    margin: auto;
     background-color:rgb(36, 32, 32);
-    width: 80rem;
-    height: 26rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
+
 /************** GOOGLE MAP *******************/
 .location{
     margin: auto;
     background-color:rgb(36, 32, 32);
-    width: 80rem;
-    height: 26rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
+
 .location h1{
     color: white;
 }
+
 /***************** FOOTER ************************/
 footer{
     background-color: rgb(36, 32, 32);
@@ -222,13 +201,14 @@ footer{
     display:grid;
     place-content: center;
     border-top: 1px solid #ffffff;
-
 }
+
 ul{
     list-style: none;
     display: flex;
     justify-content: center;
 }
+
 li{
     padding: 10px;
 }
