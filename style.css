@@ -51,7 +51,7 @@ transform: translate3d(0, 0, 0);
 }
     }
   /********************** FADE IN ***********************/
-  #list {
+ /* #list {
 margin: 2em auto;
 display: flex;
 justify-content: space-between;
@@ -78,7 +78,7 @@ animation-delay: 1s;
 #list li:nth-child(3) {
 animation-delay: 2s;
 }
-
+*/
 
 @keyframes fadeIn {
 from {
@@ -175,8 +175,8 @@ transform: translate3d(0, 0, 0);
 }
 .container .box{
     position:relative ;
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 19.5rem;
     margin: 3rem;
 }
 .container .box:hover .imgBox{
@@ -211,10 +211,12 @@ padding: 10px;
     transition: all 0.9s ease-in-out;
 }
 .imgBox img{
-    background-image: url(https://randomuser.me/api/portraits/men/3.jpg);  /*** DARK MODE IMG ***/
-    background-size: cover;
-    width: 20rem;
-    height: 20rem;
+    background-image: url(img/photo-cv.png) ; /*** DARK MODE IMG ***/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16rem;
+    height: 19.5rem;
     object-fit: cover;
     resize: both;
 }
