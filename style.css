@@ -50,57 +50,14 @@ opacity: 1;
 transform: translate3d(0, 0, 0);
 }
     }
-  /********************** FADE IN ***********************/
- /* #list {
-margin: 2em auto;
-display: flex;
-justify-content: space-between;
-padding: 0;
-max-width: 600px;
-list-style: none;
-height: 15em;
-}
-
-#list li {
-
-width: 100px;
-height: 100px;
-margin: 0 5px;
-text-align: center;
-line-height: 100px;
-opacity: 0;
-animation: fadeIn 1s ease-in both;
-}
-
-#list li:nth-child(2) {
-animation-delay: 1s;
-}
-#list li:nth-child(3) {
-animation-delay: 2s;
-}
-*/
-
-@keyframes fadeIn {
-from {
-opacity: 0;
-transform: translate3d(0, -20%, 0);
-}
-to {
-  opacity: 1;
-transform: translate3d(0, 0, 0);
-}
-}
-  /******************* LOADING *********************/
 
 
     /************************ FADE UP *****************************/
-    #fadeUp {
-  
-      display: flex;
-   
+    #fadeUp { 
       max-width: 600px;
       text-align: center;
       margin: auto;
+      padding: 15px;
 
       opacity: 0;
       animation: fadeUp 1s ease-in both;
@@ -171,7 +128,7 @@ transform: translate3d(0, 0, 0);
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+
 }
 .container .box{
     position:relative ;
@@ -182,9 +139,6 @@ transform: translate3d(0, 0, 0);
 .container .box:hover .imgBox{
     transform:translate(-1.5rem,-3.5rem);
 }
-/*.container .box:hover .content{
-    transform:translate(3.5rem,3.5rem);
-}*/
 .content{
 text-align: center;
 padding: 10px;
