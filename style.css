@@ -20,41 +20,21 @@ h1,h2, h3{
     text-align: center;    
 }
 
-  /********************** FADE DOWN ***********************/
-#fadeDown {
-    opacity: 0;
-    animation: fadeDown 1s ease-in both;
-}
-
-#fadedown h3 {
-    display: flex;
-    align-items: end;
-}
-    
-#fadeDown {
-    animation-delay: 3s;
-}
-    
-@keyframes fadeDown {
-from {
-    opacity: 0;
-    transform: translate3d(0, +50%, 0);
-}
-to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-    }
-
 /************************ FADE UP *****************************/
 #fadeUp { 
+    margin: auto;
+    margin-top: 150px;
+    width: 180px;
+    text-align: center;
     opacity: 0;
     animation: fadeUp 1s ease-in both;
 }
 
+/*
 #fadeUp span{
-    margin-left: 10px;
+
 }
+*/
 
 #fadeUp {
     animation-delay: 2s;
@@ -70,9 +50,40 @@ to {
     transform: translate3d(0, 0, 0);
 }
     }
-  
+
+  /********************** FADE DOWN ***********************/
+#fadeDown {
+    margin: auto;
+    width: 300px;
+    opacity: 0;
+    margin-top: 60px;
+    text-align: center;
+    animation: fadeDown 1s ease-in both;
+}
+
+#fadeDown h3 {
+display: flex;
+justify-content: center;
+}
+ 
+#fadeDown {
+    animation-delay: 3s;
+}
+    
+@keyframes fadeDown {
+from {
+    opacity: 0;
+    transform: translate3d(0, +50%, 0);
+}
+to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+    }
+
   /*************** INTRO ****************/
 .intro{
+    width: 350px;
     height: 600px;
 }
 
