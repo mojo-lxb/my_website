@@ -19,6 +19,14 @@ h1,h2, h3{
     color: #ffffff;
     text-align: center;    
 }
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #26f4f4;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 /************************ FADE UP *****************************/
 #fadeUp { 
@@ -105,6 +113,7 @@ main{
 }
 
 .text{
+    padding: 25px;
     color: white;
 }
 
@@ -131,9 +140,13 @@ main{
     margin: 3rem;
 }
 
+/* TO DISPLAY ON TABLET AND DESKTOP
+
 .container .box:hover .imgBox{
     transform:translate(-1.5rem,-3.5rem);
 }
+
+*/
 
 .content{
 text-align: center;
@@ -151,12 +164,12 @@ padding: 10px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: start; /* to end for media Q */
 }
 
 .imgBox{
     position: absolute;
-    top: 0;
+    top: 30px; /* to 0 for media Q */
     left: 0;
     width: 100%;
     height: 100%;
@@ -173,6 +186,16 @@ padding: 10px;
     height: 19.5rem;
     object-fit: cover;
     resize: both;
+}
+#dark-mode{
+    width: 16rem;
+    height: 19.5rem;
+}
+/***************** CONTACT ICON **************************/
+.contactIcon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 /****************** SKILLS **********************/
