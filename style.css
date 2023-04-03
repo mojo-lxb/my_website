@@ -31,6 +31,22 @@ button{
     margin: 25px;
 
 }
+  /*************** INTRO ****************/
+  .intro{
+    width: 450px;
+    height: 600px;
+}
+
+.intro h3{
+    display: flex;
+    align-items: end;
+}
+
+.title {
+    margin: auto;
+    display: flex;
+}
+
 /*********************** AUTOMATIC SLIDER *******************************/
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -134,21 +150,7 @@ to {
 }
     }
 
-  /*************** INTRO ****************/
-.intro{
-    width: 350px;
-    height: 600px;
-}
 
-.intro h3{
-    display: flex;
-    align-items: end;
-}
-
-.title {
-    margin: auto;
-    display: flex;
-}
 /*********************** MAIN **************************/
 main{
     margin: auto;
