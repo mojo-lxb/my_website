@@ -76,11 +76,11 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.4;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 0.4} 
   to {opacity: 1}
 }
 
@@ -106,7 +106,7 @@ img {vertical-align: middle;}
 */
 
 #fadeUp {
-    animation-delay: 2s;
+    animation-delay: 4s;
 }
     
 @keyframes fadeUp {
@@ -136,7 +136,7 @@ justify-content: center;
 }
  
 #fadeDown {
-    animation-delay: 3s;
+    animation-delay: 5s;
 }
     
 @keyframes fadeDown {
