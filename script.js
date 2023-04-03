@@ -44,9 +44,10 @@ function fadeIn() {
     let opacity = 0;
     let intervalID = setInterval(function() {
   
-        if (opacity <= 0.8) {
-            opacity = opacity + 0.08
+        if (opacity <= 0.1) {
+            opacity = opacity + 0.05
             fade.style.opacity = opacity;
+
         } else {
             clearInterval(intervalID);
         }

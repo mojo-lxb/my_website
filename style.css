@@ -34,21 +34,20 @@ button{
 
 /*************** HEAD SLIDE *******************/
 .headSlider{
+    margin: auto;
     position: relative;
+    width: 450px;
+    height: 600px;
+
 }
 .introFade {
+    margin: auto;
     position: absolute;
     top: -22%;
     right: 38%;
     z-index: 1;
   }
   /*************** INTRO ****************/
-  .intro{
-    width: 450px;
-    height: 600px;
-    margin: auto;
-}
-
 .intro h3{
     display: flex;
     align-items: end;
