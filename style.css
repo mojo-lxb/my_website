@@ -27,6 +27,10 @@ button{
     padding: 10px;
     border-radius: 10px;
 }
+.btn{
+    margin: 25px;
+
+}
 
 /************************ FADE UP *****************************/
 #fadeUp { 
@@ -193,6 +197,7 @@ padding: 10px;
 }
 /***************** CONTACT ICON **************************/
 .contactIcon{
+    margin: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
