@@ -36,6 +36,7 @@ button{
 .headSlider{
     margin: auto;
     position: relative;
+    overflow: hidden;
     width: 450px;
     height: 600px;
 
@@ -44,7 +45,7 @@ button{
     margin: auto;
     position: absolute;
     top: -22%;
-    right: 38%;
+    right: 18%;
     z-index: 1;
   }
   /*************** INTRO ****************/
@@ -182,7 +183,7 @@ main{
 }
 
 .dark-mode {
-    background-color:rgb(36, 32, 32);
+    background-color:rgb(255, 255, 255);
     color: white;
 }
 
@@ -194,7 +195,7 @@ main{
     position: relative;
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .container .box{
@@ -206,8 +207,7 @@ main{
 
 /* TO DISPLAY ON TABLET AND DESKTOP
 
-.container .box:hover .imgBox{
-    transform:translate(-1.5rem,-3.5rem);
+
 }
 
 */
@@ -239,9 +239,6 @@ padding: 10px;
     height: 100%;
     z-index: 2;
     transition: all 0.9s ease-in-out;
-}
-
-.imgBox img{
     background-image: url(img/photo-cv.png) ; /*** DARK MODE IMG ***/
     background-position: center;
     background-repeat: no-repeat;
@@ -254,6 +251,7 @@ padding: 10px;
 #dark-mode{
     width: 16rem;
     height: 19.5rem;
+    
 }
 /***************** CONTACT ICON **************************/
 .contactIcon{
@@ -311,3 +309,29 @@ ul{
 li{
     padding: 10px;
 }
+
+/****************************** MEDIA QUERY IPAD  *******************************************/
+
+@media screen and (min-width: 850px){
+    .container .box:hover .imgBox{
+        transform:translate(-1.5rem,-3.5rem);
+}
+    .box{
+        align-items: end;
+    }
+    .imgBox{
+        top: 0px;
+    }
+    .headSlider{
+
+        width: 100%;
+        max-width: 850px;
+        height: 600px;
+    
+    }
+}
+
+
+/****************************** MEDIA QUERY DESKTOP  *******************************************/
+
+@media screen and (min-width: 850px){}
