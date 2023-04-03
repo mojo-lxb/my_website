@@ -19,6 +19,7 @@ h1,h2, h3{
     color: #ffffff;
     text-align: center;    
 }
+/************ BUTTONS ******************/
 button{
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid #26f4f4;
@@ -29,12 +30,23 @@ button{
 }
 .btn{
     margin: 25px;
-
 }
+
+/*************** HEAD SLIDE *******************/
+.headSlider{
+    position: relative;
+}
+.introFade {
+    position: absolute;
+    top: -22%;
+    right: 38%;
+    z-index: 1;
+  }
   /*************** INTRO ****************/
   .intro{
     width: 450px;
     height: 600px;
+    margin: auto;
 }
 
 .intro h3{
@@ -48,14 +60,20 @@ button{
 }
 
 /*********************** AUTOMATIC SLIDER *******************************/
-.mySlides {display: none;}
-img {vertical-align: middle;}
+.mySlides {
+    display: none;
+    filter: grayscale(0.8);
+}
+img {
+    vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    animation: fade 4s ease-in both;
 }
 
 /* Caption text */
@@ -106,7 +124,7 @@ img {vertical-align: middle;}
 */
 
 #fadeUp {
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
     
 @keyframes fadeUp {
@@ -136,7 +154,7 @@ justify-content: center;
 }
  
 #fadeDown {
-    animation-delay: 5s;
+    animation-delay: 4s;
 }
     
 @keyframes fadeDown {
