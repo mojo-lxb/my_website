@@ -31,7 +31,12 @@ button{
 .btn{
     margin: 25px;
 }
-
+button:hover{
+    
+    box-shadow:  5px 5px #26f4f465;
+    color: #26f4f4;
+    
+}
 /*************** HEAD SLIDE *******************/
 .headSlider{
     margin: auto;
@@ -318,6 +323,15 @@ li{
 /****************************** MEDIA QUERY IPAD  *******************************************/
 
 @media screen and (min-width: 850px){
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    #fadeDown{
+        position: absolute;
+        left: -120px;
+        bottom: 10px;
+    }
     .container .box:hover .imgBox{
         transform:translate(-1.5rem,-3.5rem);
 }
@@ -345,7 +359,10 @@ li{
         display: flex;
     }
 }
-
+ /********* MAIN CONTENT *********/
+ .text{
+    margin: auto;
+ }
 
 /****************************** MEDIA QUERY DESKTOP  *******************************************/
 
