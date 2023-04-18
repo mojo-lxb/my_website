@@ -6,18 +6,24 @@
     padding: 0;
     border: 0;
 }
-
+main{
+    margin: auto;
+}
 body {
     padding: 25px;
     color: #ffffff;
     background-color: black;
     font-size: 25px;
-    font-family:'Source Code Pro', monospace,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,h2, h3{
     color: #ffffff;
     text-align: center;    
+}
+.title{
+    font-family:'Source Code Pro', monospace,sans-serif;
+    text-align: center;
 }
 /************ BUTTONS ******************/
 button{
@@ -49,6 +55,7 @@ button:hover{
 .introFade {
     margin: auto;
     position: absolute;
+    font-family:'Source Code Pro', monospace,sans-serif;
     top: -22%;
     right: 18%;
     z-index: 1;
@@ -156,29 +163,24 @@ to {
     text-align: center;
     animation: fadeDown 1s ease-in both;
 }
-
 #fadeDown h3 {
 display: flex;
 justify-content: center;
 }
- 
 #fadeDown {
     animation-delay: 4s;
 }
-    
 @keyframes fadeDown {
-from {
-    opacity: 0;
-    transform: translate3d(0, +50%, 0);
-}
-to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
+    from {
+        opacity: 0;
+        transform: translate3d(0, +50%, 0);
     }
-
-
-/*********************** MAIN **************************/
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+/*********************** Main **************************/
 main{
     margin: auto;
     background: rgb(36, 32, 32);
@@ -186,61 +188,53 @@ main{
     border-bottom: 1px solid #ffffff;
     min-width: 420px; 
 }
-
 .text{
     padding: 25px;
     color: white;
 }
-
+/*********************** Dark mode **************************/
 .dark-mode {
     background-color:rgb(255, 255, 255);
     color: white;
 }
-
 .dark-mode .content {
     color:rgb(36, 32, 32);
 }
-
+/************** Photo box ******************/
 .container{
     position: relative;
     display:flex;
     justify-content: center;
     align-items: center; 
 }
-
 .container .box{
     position:relative ;
     width: 16rem;
     height: 19.5rem;
     margin: 3rem;
 }
-
 /* TO DISPLAY ON TABLET AND DESKTOP
 
 
 }
 
 */
-
 .content{
 text-align: center;
 padding: 10px;
 }
-
 .content h2{
     font-size: 16px;
     font-weight: bolder;
     color: black;
     font-style: italic;
 }
-
 .box{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: start; /* to end for media Q */
 }
-
 .imgBox{
     position: absolute;
     top: 30px; /* to 0 for media Q */
@@ -261,8 +255,8 @@ padding: 10px;
 #dark-mode{
     width: 16rem;
     height: 19.5rem;
-    
 }
+
 /***************** CONTACT ICON **************************/
 .contactIcon{
     margin: 20px;
@@ -277,6 +271,10 @@ padding: 10px;
     background-color:rgb(36, 32, 32);
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
+}
+.skills li{
+
+
 }
 
 /******************* HOBBY **************************/
@@ -294,7 +292,6 @@ padding: 10px;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
-
 .location h1{
     color: white;
 }
@@ -309,13 +306,11 @@ footer{
     place-content: center;
     border-top: 1px solid #ffffff;
 }
-
 ul{
     list-style: none;
     display: flex;
     justify-content: center;
 }
-
 li{
     padding: 10px;
 }
