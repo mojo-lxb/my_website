@@ -15,6 +15,7 @@ body {
     background-color: black;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 80px ;
 }
 
 h1,h2, h3{
@@ -272,7 +273,10 @@ padding: 10px;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
-.skills li{
+.skills ul{
+display: flex;
+align-items: center;
+column-count: 3;
 
 
 }
