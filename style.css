@@ -132,13 +132,11 @@ img {
     opacity: 0;
     animation: fadeUp 1s ease-in both;
 }
-
 /*
 #fadeUp span{
 
 }
 */
-
 #fadeUp {
     animation-delay: 3s;
 }
@@ -208,7 +206,7 @@ main{
     justify-content: center;
     align-items: center; 
 }
-.container .box{
+.container .fs-box{
     position:relative ;
     width: 16rem;
     height: 19.5rem;
@@ -230,7 +228,7 @@ padding: 10px;
     color: black;
     font-style: italic;
 }
-.box{
+.fs-box{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -268,19 +266,15 @@ padding: 10px;
 
 /****************** SKILLS **********************/
 .skills{
+    display:none;
     margin: auto;
     background-color:rgb(36, 32, 32);
     height: 250px;
-    border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
 .skills ul{
     display: block !important;
     column-count: 2;
-
-
-
-
 }
 
 /******************* HOBBY **************************/
@@ -355,12 +349,19 @@ background: rgba(255, 255, 255, 0.1);
     width: 90%;
     border-radius: 6px;
     background: #26f4f4;
-    animation: progress 0.4s ease-in-out forwards;
+    animation: progress 0.8s ease-in-out forwards; 
     opacity: 0;
 }
+/******* HTML ProgressBar ********/
 .skill-per.html{
-    width: 70%;
-    animation-delay:0.1s;
+    width: 50%;
+    animation-delay:0.4s;
+}
+
+/******* HTML ProgressBar ********/
+.skill-per.css{
+    width: 45%;
+    animation-delay:0.4s;
 }
 
 @keyframes progress {
@@ -393,7 +394,7 @@ background: rgba(255, 255, 255, 0.1);
     width: 10px;
     border-radius: 50%;
     z-index: -1;
-    background: #000;
+    background: #ffffff;
     transform: translateX(-50%)rotate(45deg);
 }
 
@@ -409,10 +410,10 @@ background: rgba(255, 255, 255, 0.1);
         left: -120px;
         bottom: 10px;
     }
-    .container .box:hover .imgBox{
+    .container .fs-box:hover .imgBox{
         transform:translate(-1.5rem,-3.5rem);
 }
-    .box{
+    .fs-box{
         align-items: end;
     }
     .imgBox{

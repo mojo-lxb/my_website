@@ -8,10 +8,10 @@ window.addEventListener("focus",()=>{
 })
 
         /************ DARK MODE **************/
-        function myFunction() {
-          let theme = document.body;
-          theme.classList.toggle("dark-mode");
-       }
+function myFunction() {
+  let theme = document.body;
+  theme.classList.toggle("dark-mode");
+}
 
 /****** AUTOMATIC SLIDER ********/
 let slideIndex = 0;
@@ -35,6 +35,13 @@ function showSlides() {
 }
 
 
+/***************** See more Button *********************/
+
+function seeMore() {
+  let more = document.querySelector(".skills");
+  
+  more.style.display="block";
+}
 /***************** FADE IN INTRO *********************/
 
 window.onload = fadeIn;
@@ -53,3 +60,5 @@ function fadeIn() {
         }
     },2000);
 } 
+
+
