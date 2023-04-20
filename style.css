@@ -12,7 +12,7 @@ main{
 body {
     padding: 25px;
     color: #ffffff;
-    background-color: black;
+    background-color: rgb(11, 11, 11);
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px 80px ;
@@ -28,7 +28,7 @@ h1,h2, h3{
 }
 /************ BUTTONS ******************/
 button{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(30, 30, 30);
     border: 1px solid #26f4f4;
     color: white;
     font-size: large;
@@ -39,10 +39,8 @@ button{
     margin: 25px;
 }
 button:hover{
-    
     box-shadow:  5px 5px #26f4f465;
     color: #26f4f4;
-    
 }
 /*************** HEAD SLIDE *******************/
 .headSlider{
@@ -104,7 +102,7 @@ img {
 }
 
 .active {
-  background-color: #717171;
+  background-color: rgb(30, 30, 30);
 }
 
 /* Fading animation */
@@ -178,9 +176,8 @@ justify-content: center;
 /*********************** Main **************************/
 main{
     margin: auto;
-    background: rgb(36, 32, 32);
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    background: rgb(30, 30, 30);
+    border-radius: 7px;
     min-width: 420px; 
 }
 .text{
@@ -193,7 +190,7 @@ main{
     color: white;
 }
 .dark-mode .content {
-    color:rgb(36, 32, 32);
+    color:rgb(30, 30, 30);
 }
 /************** Photo box ******************/
 .container{
@@ -264,9 +261,8 @@ padding: 10px;
 .skills{
     display:none;
     margin: auto;
-    background-color:rgb(36, 32, 32);
-    height: 250px;
-    border-bottom: 1px solid #ffffff;
+    background-color:rgb(30, 30, 30);
+    border-radius: 7px;
 }
 .skills ul{
     display: block !important;
@@ -276,17 +272,14 @@ padding: 10px;
 /******************* HOBBY **************************/
 .hobby{
     margin: auto;
-    background-color:rgb(36, 32, 32);
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    background-color:rgb(30, 30, 30);
+    border-radius: 7px;
 }
 
 /************** GOOGLE MAP *******************/
 .location{
     margin: auto;
-    background-color:rgb(36, 32, 32);
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    background-color:rgb(30, 30, 30);
 }
 .location h1{
     color: white;
@@ -294,13 +287,12 @@ padding: 10px;
 
 /***************** FOOTER ************************/
 footer{
-    background-color: rgb(36, 32, 32);
+    background-color: rgb(30, 30, 30);
     width: 100%;
     height: 60px;
     margin-top: 50px;
     display:grid;
     place-content: center;
-    border-top: 1px solid #ffffff;
 }
 ul{
     list-style: none;
@@ -313,9 +305,10 @@ li{
 /***************** ProgressBar ************************/
 .progressBar ul{
     display: block;
-    column-count: 4 !important;
+    /*column-count: 4 !important;*/
 }
 .box{
+    margin: auto;
     position: relative;
     max-width: 1200px;
     width: 100%;
@@ -389,13 +382,14 @@ background: rgba(255, 255, 255, 0.1);
     content:"";
     position: absolute;
     left: 96%; /* Progress level */
-    bottom: -2px;
+    padding: 0 5px 0 5px;
+    bottom: -1px;
     height: 10px;
     width: 10px;
-    border-radius: 50%;
+    border-radius: 20%;
     z-index: -1;
     background: #ffffff;
-    transform: translateX(-50%)rotate(45deg);
+    /*transform: translateX(-50%)rotate(45deg);*/
 }
 /************************** MEDIA QUERY MOBILE *****************************/
 
@@ -456,4 +450,9 @@ background: rgba(255, 255, 255, 0.1);
 
 /****************************** MEDIA QUERY DESKTOP  *******************************************/
 
-@media screen and (min-width: 850px){}
+@media screen and (min-width: 850px){
+    .progressBar ul{
+        display: block;
+        column-count: 4 !important;
+    }
+}
