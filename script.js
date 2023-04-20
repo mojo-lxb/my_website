@@ -1,4 +1,5 @@
         /*********** TITLE CHANGE ***************/
+        
 let docTitle = document.title;
 window.addEventListener("blur",()=>{
     document.title = "Come Back ;(";
@@ -6,14 +7,14 @@ window.addEventListener("blur",()=>{
 window.addEventListener("focus",()=>{
     document.title = docTitle;
 })
-
         /************ DARK MODE **************/
 function myFunction() {
   let theme = document.body;
   theme.classList.toggle("dark-mode");
 }
 
-/****** AUTOMATIC SLIDER ********/
+      /****** AUTOMATIC SLIDER ********/
+
 let slideIndex = 0;
 showSlides();
 
@@ -33,14 +34,7 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
-
-
 /***************** See more Button *********************/
-
-/*function seeMore() {
-  let more = document.querySelector(".skills");
-  more.style.display="block";
-}*/
 
 function seeMore() {
   let more = document.querySelector(".skills");
@@ -52,7 +46,7 @@ function seeMore() {
 } 
 
 
-/***************** FADE IN INTRO *********************/
+/***************** Fade In Intro *********************/
 
 window.onload = fadeIn;
   
