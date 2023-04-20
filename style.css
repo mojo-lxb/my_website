@@ -270,13 +270,15 @@ padding: 10px;
 .skills{
     margin: auto;
     background-color:rgb(36, 32, 32);
+    height: 250px;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
 .skills ul{
-display: flex;
-align-items: center;
-column-count: 3;
+    display: block !important;
+    column-count: 2;
+
+
 
 
 }
