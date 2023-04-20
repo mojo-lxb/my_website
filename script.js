@@ -37,11 +37,21 @@ function showSlides() {
 
 /***************** See more Button *********************/
 
+/*function seeMore() {
+  let more = document.querySelector(".skills");
+  more.style.display="block";
+}*/
+
 function seeMore() {
   let more = document.querySelector(".skills");
-  
-  more.style.display="block";
-}
+  if (more.style.display === "none") {
+    more.style.display = "block";
+  } else {
+    more.style.display = "none";
+  }
+} 
+
+
 /***************** FADE IN INTRO *********************/
 
 window.onload = fadeIn;
