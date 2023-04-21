@@ -69,6 +69,7 @@ button:hover{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    display: block;
   }
   
   .topnav a.icon {
@@ -77,6 +78,12 @@ button:hover{
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
   }
 /* media screen*/
 /*
