@@ -21,21 +21,27 @@
 </head> 
 
 <body >
+    <!-- Simulate a smartphone / tablet -->
+  
+    
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="#home" class="active">
+            <img src="img\little icon.PNG" width="100px">
+        </a>
+        <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+        <a href="javascript:void(0);" class="icon" onclick="drop()">
+            <i class="fa fa-bars"></i>
+        </a>
     <header>
         <!--************ NAVBAR **********-->
 
         
         <nav class="navBar">
-            <img src="img\little icon.PNG" width="100px">
-                <i class="fa-solid fa-bars" id="burgerMenu"style="color: #26f4f4;">
-                    <ul>
-                        <a href="#">Home</a>
-                        <a href="#">About me</a>
-                        <a href="#">Contact</a>
-                    </ul>
-                </i>
-
-
             <!-- dektop navbar-->
             <ul>
                 <li><a href="#">Home</a></li>
@@ -313,6 +319,16 @@
   
     </footer>   
 <script src="script.js"></script>
+<script>
+    function drop() {
+      let x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>
 </html>
 
