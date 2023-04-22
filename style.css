@@ -53,27 +53,30 @@ button:hover{
     display: none;
 }*/
 /********** DROP DOWN **************/
-  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+
   .topnav {
     overflow: hidden;
     background-color: #333;
     position: relative;
+    width: 150px;
+    margin: 0px 523px;
   }
-  
   .topnav #myLinks {
     display: none;
   }
-  
   .topnav a {
     color: white;
-    padding: 14px 16px;
+    padding: 15px 16px;
     text-decoration: none;
-    
     font-size: 17px;
     display: block;
-    text-align: end;
+    text-align: center;
   }
-  
+
   .topnav a.icon {
     background: black;
     display: block;
@@ -81,10 +84,16 @@ button:hover{
     right: 0;
     top: 0;
   }
-
-  
+.icon{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-right: 20px;
+}
+a.icon{
+    text-decoration: none;
+}
   .active {
-    background-color: #04AA6D;
     color: white;
   }
 /* media screen*/
