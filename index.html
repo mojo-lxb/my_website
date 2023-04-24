@@ -82,7 +82,7 @@
         <!--************* DARK MODE *****************-->
         <button id="drkbtn" onclick="myFunction()">Dark mode</button>
         <!--******************* Introduction ******************-->
-    <main class="contentBox">
+    <main>
         <section id="introduction">
             <div class="container">
                 <div class="fs-box">
@@ -281,27 +281,19 @@
         <li>Scuba diving</li>
     </ul>
     </section>
-    <!-- ************ Google Map **************** -->
-    <h3 class="headings">&ltLocation/&gt</h3>
-    <section class="contentBox">
-        
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5161.842731324341!2d6.142673428727797!3d49.693453607758485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47955026b90ed85f%3A0x500d1d6d10594c0!2sHelmdange%2C%20Lorentzweiler!5e0!3m2!1sen!2slu!4v1679568857894!5m2!1sen!2slu" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
     <!--******************* Figma ******************-->
     <h3 class="headings">&ltFigma/&gt</h3>
-    <section class="contentBox">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtjLmpY7w3j1TTNSV6FDPb9%2FEasyEscape%3Fnode-id%3D0%253A1%26t%3DifjHJG9guriffJJQ-1" allowfullscreen></iframe>
+    <section class="figma">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="250" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtjLmpY7w3j1TTNSV6FDPb9%2FEasyEscape%3Fnode-id%3D0%253A1%26t%3DifjHJG9guriffJJQ-1" allowfullscreen></iframe>
         <a href="https://www.figma.com/proto/tjLmpY7w3j1TTNSV6FDPb9/EasyEscape?node-id=10-100&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A100">Figma</a>
     </section>
-       <!-- ************ Google Map **************** -->
+       <!-- ************ Contact Form **************** -->
        <h3 class="headings">&ltContact/&gt</h3>
        <section id="contact">
            <form>
             <label>First Name</label> 
             <input type="text" placeholder="First name"/>
-            <lable>Last Name</lable>
+            <label>Last Name</label>
             <input type="text" placeholder="Last name"/>
             <label>Email</label>
             <input type="email" placeholder="Your email"/>
@@ -309,6 +301,14 @@
             <button type="submit">Submit</button>
            </form>
        </section>
+           <!-- ************ Google Map **************** -->
+    <h3 class="headings">&ltLocation/&gt</h3>
+    <section class="location">
+        <div>
+            <div style="text-decoration:none; overflow:hidden;max-width:100%;width:400px;height:200px;"><div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Helmdange+Lorentzweiler,+Luxembourg&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes" id="authmaps-data">premium bootstrap themes</a><style>#embed-ded-map-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5161.842731324341!2d6.142673428727797!3d49.693453607758485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47955026b90ed85f%3A0x500d1d6d10594c0!2sHelmdange%2C%20Lorentzweiler!5e0!3m2!1sen!2slu!4v1679568857894!5m2!1sen!2slu" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
     <!-- ************ Footer **************** -->
     <footer>
         <ul>
@@ -318,7 +318,6 @@
             <li><a href="#"><i class="fa-solid fa-envelope" style="color: #26f4f4;"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-github" style="color: #26f4f4;"></i></a></li>
         </ul>
-  
     </footer>   
 <script src="script.js"></script>
 <script>
