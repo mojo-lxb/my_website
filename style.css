@@ -139,7 +139,7 @@ button:hover{
     margin: auto;
     position: absolute;
     font-family:'Source Code Pro', monospace,sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     left: 50%;
     top: 20%;
     transform: translate(-50%, -50%);
@@ -171,7 +171,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 1200px;
     position: relative;
     margin: auto;
     animation: fade 4s ease-in both;
@@ -189,18 +189,18 @@ img {
 }
 
 .active {
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(255, 0, 0);
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 0.4;
+    animation-name: fade;
+    animation-duration: 0.4;
 }
 
 @keyframes fade {
-  from {opacity: 0.4} 
-  to {opacity: 1}
+    from {opacity: 0.4} 
+    to {opacity: 1}
 }
 /********************* Fade text intro *************************/
 .introFade{
@@ -209,14 +209,14 @@ img {
     z-index: 1;
 }
 #fadeDown{
-margin: auto;
-width: 200px;
-height: 180px;
-opacity: 0;
-margin-top: 60px;
-text-align: center;
-animation: fadeDown 1s ease-in both;
-animation-delay: 4s;
+    margin: auto;
+    width: 200px;
+    height: 180px;
+    opacity: 0;
+    margin-top: 60px;
+    text-align: center;
+    animation: fadeDown 1s ease-in both;
+    animation-delay: 4s;
 }
 /************************ FADE UP *****************************/
 #fadeUp { 
@@ -292,7 +292,7 @@ main{
     height: 19.5rem;
     margin: auto;
 }
-.pic{
+#introduction{
     padding: 50px;
 }
 .imgBox{
@@ -340,13 +340,7 @@ main{
     height: 19.5rem;
 }
 
-/***************** CONTACT ICON **************************/
-.contactIcon{
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+
 
 /****************** SKILLS **********************/
 .skills{
@@ -375,8 +369,15 @@ main{
 .location h1{
     color: white;
 }
+/***************** CONTACT ICON **************************/
+.contactIcon{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 /************** CONTACT *******************/
-.contact form{
+#contact form{
     display: grid;
     text-align: start;
 }
@@ -494,6 +495,9 @@ li{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+    .introFade {
+        font-size: 10px !important;
+    }
     .textSlider {
       font-size: 11px
   }
@@ -521,7 +525,7 @@ li{
         text-align: center;
         z-index: 1;
     }
-  /*********** Fade Welcome text *************/
+  
     #fadeDown {
         display: flex;
 }
@@ -574,6 +578,21 @@ li{
     main{
         display: flex;
         justify-content: center;
-        max-width:1200px ;
+        max-width:1200px;
     }
+      /*********** Fade Welcome text *************/
+  .introFade {
+    margin: auto;
+    font-size: 80px !important;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  /*************** INTRO ****************/
+.intro h3{
+    display: flex;
+    align-items: end;
+    font-size: 15px;
+}
 }
