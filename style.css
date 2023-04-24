@@ -56,18 +56,31 @@ button:hover{
   .navbar{
     display: flex;
     justify-content: space-between;
+    height: 85px;
+  }
+  /*.icon{
+    align-items: center;
+    color: #ffffff;
+    margin-right: 20px;
+}*/
+.dropDown{
+    align-self: center;
+    margin-right: 25px;
+    
+}
+.topnav #myLinks {
+    display: none;
   }
 
   .topnav {
+    position: absolute;
     overflow: hidden;
     background-color: #333;
-    position: relative;
+    
     width: 150px;
-    margin: 0px 523px;
-  }
-  .topnav #myLinks {
-    display: none;
-  }
+    text-align: center;
+  }/*
+
   .topnav a {
     color: white;
     padding: 15px 16px;
@@ -84,18 +97,13 @@ button:hover{
     right: 0;
     top: 0;
   }
-.icon{
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    margin-right: 20px;
-}
+
 a.icon{
     text-decoration: none;
 }
   .active {
-    color: white;
-  }
+ 
+  }*/
 /* media screen*/
 /*
 .navBar{                                                
