@@ -8,7 +8,7 @@
 }
 /*********************** Content Box **************************/
 
-.contentBox{
+main{
     margin: auto;
     background: rgb(30, 30, 30);
     border-radius: 7px;
@@ -294,6 +294,7 @@ to {
     display:none;
     margin: auto;
     min-width: 400px;
+    max-width: 1200px;
     background-color:rgb(30, 30, 30);
     border-radius: 7px;
 }
@@ -302,33 +303,65 @@ to {
     column-count: 2;
 }
 
-/******************* HOBBY **************************/
+/******************* Hobby **************************/
 .hobby{
     margin: auto;
     min-width: 400px;
+    max-width: 1200px;
     background-color:rgb(30, 30, 30);
     border-radius: 7px;
 }
-
-/************** GOOGLE MAP *******************/
-.location h1{
-    color: white;
+/************** Figma *******************/
+.figma{
+    margin: auto;
+    min-width: 400px;
+    max-width: 1200px;
+    background-color:rgb(30, 30, 30);
+    border-radius: 7px;
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
-/***************** CONTACT ICON **************************/
+/***************** Contact Form **************************/
 .contactIcon{
     margin-top: 80px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-/************** CONTACT *******************/
+/************** Contact *******************/
+#contact{
+    margin: auto;
+    min-width: 400px;
+    max-width: 1200px;
+    background-color:rgb(30, 30, 30);
+    border-radius: 7px;
+}
 #contact form{
     display: grid;
     text-align: start;
+    padding: 15px;
     min-width: 400px;
+    max-width: 1200px;
 }
 form button{
-    margin:20px;
+    margin: 30px;
+}
+input,textarea,label{
+    margin: auto;
+    width: 200px;
+}
+
+/************** GOOGLE MAP *******************/
+.location h1{
+    color: white;
+}
+.location embed{
+margin: auto;
+}
+.location :nth-child(2){
+    display: none;
 }
 
 /***************** FOOTER ************************/
@@ -351,6 +384,7 @@ li{
 }
 /***************** ProgressBar ************************/
 .progressBar{
+    margin: auto;
     max-width: 1200px;
     min-width: 400px;
 }
@@ -547,5 +581,11 @@ li{
     display: flex;
     align-items: end;
     font-size: 15px;
+}
+.location :nth-child(1){
+    display: none;
+}
+.location :nth-child(2){
+    display: block;
 }
 }
