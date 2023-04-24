@@ -68,27 +68,34 @@ button:hover{
     margin-right: 25px;
     
 }
-.topnav #myLinks {
+/*.topnav #myLinks {
     display: none;
-  }
+  }*/
 
   .topnav {
+    display: none;
     position: absolute;
     overflow: hidden;
     background-color: #333;
-    
+    right: 70px;
+    top: 110px; 
     width: 150px;
+    padding: 0px 10px 10px;
     text-align: center;
-  }/*
+    z-index: 1;
+  }
 
   .topnav a {
     color: white;
-    padding: 15px 16px;
+    padding: 10px;
     text-decoration: none;
     font-size: 17px;
-    display: block;
-    text-align: center;
   }
+  .icon{
+    text-decoration: none;
+    color: white;
+}
+/*
 
   .topnav a.icon {
     background: black;
@@ -98,9 +105,7 @@ button:hover{
     top: 0;
   }
 
-a.icon{
-    text-decoration: none;
-}
+
   .active {
  
   }*/
@@ -483,7 +488,22 @@ background: rgba(255, 255, 255, 0.1);
   }
 /****************************** MEDIA QUERY IPAD  *******************************************/
 
-@media screen and (min-width: 850px){
+@media screen and (max-width: 850px){
+  
+    .icon{
+        display: none;
+    }
+    .topnav{
+        display: block;
+        position: relative;
+        overflow:"";
+        right: 0px;
+        top: 0px;
+        background-color: rgb(11, 11, 11);
+        width: 300px;
+        text-align: center;
+        z-index: 1;
+    }
     main{
         display: flex;
         justify-content: center;

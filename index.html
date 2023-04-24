@@ -32,11 +32,10 @@
                 <i class="fa-solid fa-bars fa-xl"></i>
             </a>
                 <div class="topnav">
-                    <div id="myLinks">
+   
                         <a href="#news">News</a>
                         <a href="#contact">Contact</a>
                         <a href="#about">About</a>
-                    </div>
                 </div>
         </div>
         
@@ -327,7 +326,7 @@
 <script src="script.js"></script>
 <script>
     function drop() {
-      let x = document.getElementById("myLinks");
+      let x = document.querySelector(".topnav");
       if (x.style.display === "block") {
         x.style.display = "none";
       } else {
