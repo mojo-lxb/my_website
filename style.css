@@ -132,8 +132,6 @@ button:hover{
 /*************** HEAD SLIDE *******************/
 .headSlider{
     width: 100%;
-    max-width: 850px;
-    height: 600px;
     position: relative;
 
 }
@@ -204,7 +202,7 @@ img {
   from {opacity: 0.4} 
   to {opacity: 1}
 }
-/*********************Fade text intro *************************/
+/********************* Fade text intro *************************/
 .introFade{
     margin: auto;
     position: absolute;
@@ -253,10 +251,10 @@ to {
         left: -120px;
         bottom: -40px;
     }
-#fadeDown h3 {
-display: flex;
-justify-content: center;
-}
+    #fadeDown h3 {
+        display: flex;
+        justify-content: center;
+    }
 
 @keyframes fadeDown {
     from {
@@ -273,7 +271,6 @@ main{
     margin: auto;
     background: rgb(30, 30, 30);
     border-radius: 7px;
-    min-width: 420px; 
 }
 .text{
     padding: 25px;
@@ -299,30 +296,29 @@ main{
     padding: 50px;
 }
 .imgBox{
-position: absolute;
-top: 30px; /* to 0 for media Q */
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 2;
-transition: all 0.9s ease-in-out;
-background-image: url(img/photo-cv.png) ; /*** DARK MODE IMG ***/
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
-width: 16rem;
-height: 19.5rem;
-object-fit: cover;
-resize: both;
+    position: absolute;
+    top: 30px; /* to 0 for media Q */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.9s ease-in-out;
+    /*background-image: url(img/photo-cv.png) ; /*** DARK MODE IMG ***/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16rem;
+    height: 19.5rem;
+    object-fit: cover;
+    resize: both;
     
 }
 .container .fs-box:hover .imgBox{
     transform:translate(-1.5rem,-3.5rem);
 }
-
 .content{
-text-align: center;
-padding: 10px;
+    text-align: center;
+    padding: 10px;
 }
 .content h2{
     font-size: 16px;
@@ -379,6 +375,14 @@ padding: 10px;
 .location h1{
     color: white;
 }
+/************** CONTACT *******************/
+.contact form{
+    display: grid;
+    text-align: start;
+}
+form button{
+    margin:20px;
+}
 
 /***************** FOOTER ************************/
 footer{
@@ -386,6 +390,7 @@ footer{
     width: 100%;
     height: 60px;
     margin-top: 50px;
+    border-radius: 7px;
     display:grid;
     place-content: center;
 }
@@ -400,6 +405,7 @@ li{
 /***************** ProgressBar ************************/
 .progressBar ul{
     display: block;
+    list-style: none;
     /*column-count: 4 !important;*/
 }
 .box{
@@ -408,7 +414,6 @@ li{
     max-width: 1200px;
     width: 100%;
     background:rgb(30, 30, 30);
-    margin:0 15px;
     padding: 10px 20px;
     border-radius: 7px;
 }
@@ -423,11 +428,11 @@ li{
     color: white;    /*#333;*/
 }
 .skill-box .skill-bar{
-height: 8px;
-width: 100%;
-border-radius: 6px;
-margin-top: 6px;
-background: rgba(255, 255, 255, 0.1);
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .skill-bar .skill-per{
@@ -484,7 +489,6 @@ background: rgba(255, 255, 255, 0.1);
     border-radius: 20%;
     z-index: -1;
     background: #ffffff;
-    /*transform: translateX(-50%)rotate(45deg);*/
 }
 /************************** MEDIA QUERY MOBILE *****************************/
 
@@ -497,15 +501,11 @@ background: rgba(255, 255, 255, 0.1);
     display:block;
     column-count: 2;    
     }
-    main{
-        display: flex;
-        justify-content: center;
-    }
-    
   }
 /****************************** MEDIA QUERY IPAD  *******************************************/
 
 @media screen and (max-width: 850px){
+
     .icon{
         display: block;
     }
@@ -522,10 +522,9 @@ background: rgba(255, 255, 255, 0.1);
         z-index: 1;
     }
   /*********** Fade Welcome text *************/
-  #fadeDown {
-    display: flex;
+    #fadeDown {
+        display: flex;
 }
-
     /**************** Intro box **********************/
 
     .fs-box{
@@ -535,20 +534,20 @@ background: rgba(255, 255, 255, 0.1);
     }
     .imgBox{
         position: absolute;
-    top: 30px; /* to 0 for media Q */
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    transition: all 0.9s ease-in-out;
-    background-image: url(img/photo-cv.png) ; /*** DARK MODE IMG ***/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 16rem;
-    height: 19.5rem;
-    object-fit: cover;
-    resize: both;
+        top: 30px; /* to 0 for media Q */
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        transition: all 0.9s ease-in-out;
+       /* background-image: url(img/photo-cv.png) ; /*** DARK MODE IMG ***/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16rem;
+        height: 19.5rem;
+        object-fit: cover;
+        resize: both;
     }
     .container .fs-box:hover .imgBox{
         transform:none;
@@ -556,11 +555,8 @@ background: rgba(255, 255, 255, 0.1);
     .headSlider{
         margin: auto;
         position: relative;
-        overflow: hidden;
-        width: 450px;
-        height: 600px;    
+        overflow: hidden;        
     }
-
 
 }
  /********* MAIN CONTENT *********/
@@ -574,5 +570,10 @@ background: rgba(255, 255, 255, 0.1);
     .progressBar ul{
         display: block;
         column-count: 4 !important;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        max-width:1200px ;
     }
 }
