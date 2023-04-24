@@ -6,9 +6,18 @@
     padding: 0;
     border: 0;
 }
-main{
+/*********************** Content Box **************************/
+
+.contentBox{
     margin: auto;
+    background: rgb(30, 30, 30);
+    border-radius: 7px;
+    min-width: 400px;
 }
+.text{
+    padding: 25px;
+    color: white;
+} 
 body {
     padding: 25px;
     color: #ffffff;
@@ -42,42 +51,22 @@ button:hover{
     box-shadow:  5px 5px #26f4f465;
     color: #26f4f4;
 }
-
-/************ NavBar ******************/
-/*.navBar{
-    display: flex;
-    justify-content: space-between;
-}*/
-
-/*.navBar ul:nth-child(3){
-    display: none;
-}*/
 /********** DROP DOWN **************/
   .navbar{
     display: flex;
     justify-content: space-between;
     height: 85px;
+    min-width: 300px;
   }
-  /*.icon{
-    align-items: center;
-    color: #ffffff;
-    margin-right: 20px;
-}*/
 .dropDown{
     align-self: center;
-    margin-right: 25px;
-    
+    margin-right: 25px;  
 }
-/*.topnav #myLinks {
-    display: none;
-  }*/
-
   .topnav {
     display: block;
     position: relative;
     overflow:"";
     background-color: rgb(11, 11, 11);
-    
     right: 0px;
     top: 0px;
     width: 300px;
@@ -91,49 +80,16 @@ button:hover{
     text-decoration: none;
     font-size: 17px;
   }
-  /*    .icon{
-        
-    }*/
   .icon{
     display: none;
     text-decoration: none;
     color: white;
 }
-/*
-
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-
-  .active {
- 
-  }*/
-/* media screen*/
-/*
-.navBar{                                                
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(11, 11, 11);
-}
-.navBar ul,li,a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    color: white;
-}*/
-
 
 /*************** HEAD SLIDE *******************/
 .headSlider{
     width: 100%;
     position: relative;
-
 }
 .introFade {
     margin: auto;
@@ -266,16 +222,7 @@ to {
         transform: translate3d(0, 0, 0);
     }
 }
-/*********************** Main **************************/
-main{
-    margin: auto;
-    background: rgb(30, 30, 30);
-    border-radius: 7px;
-}
-.text{
-    padding: 25px;
-    color: white;
-}
+
 /*********************** Dark mode **************************/
 .dark-mode {
     background-color:rgb(255, 255, 255);
@@ -346,6 +293,7 @@ main{
 .skills{
     display:none;
     margin: auto;
+    min-width: 400px;
     background-color:rgb(30, 30, 30);
     border-radius: 7px;
 }
@@ -357,15 +305,12 @@ main{
 /******************* HOBBY **************************/
 .hobby{
     margin: auto;
+    min-width: 400px;
     background-color:rgb(30, 30, 30);
     border-radius: 7px;
 }
 
 /************** GOOGLE MAP *******************/
-.location{
-    margin: auto;
-    background-color:rgb(30, 30, 30);
-}
 .location h1{
     color: white;
 }
@@ -380,6 +325,7 @@ main{
 #contact form{
     display: grid;
     text-align: start;
+    min-width: 400px;
 }
 form button{
     margin:20px;
@@ -404,6 +350,10 @@ li{
     padding: 10px;
 }
 /***************** ProgressBar ************************/
+.progressBar{
+    max-width: 1200px;
+    min-width: 400px;
+}
 .progressBar ul{
     display: block;
     list-style: none;
@@ -495,6 +445,7 @@ li{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+
     .introFade {
         font-size: 10px !important;
     }
@@ -509,6 +460,9 @@ li{
 /****************************** MEDIA QUERY IPAD  *******************************************/
 
 @media screen and (max-width: 850px){
+    .headSlider{
+        min-width: 400px;
+    }
 
     .icon{
         display: block;
@@ -583,11 +537,10 @@ li{
       /*********** Fade Welcome text *************/
   .introFade {
     margin: auto;
-    font-size: 80px !important;
+    font-size: 35px !important;
     left: 50%;
     top: 20%;
     transform: translate(-50%, -50%);
-    z-index: 1;
   }
   /*************** INTRO ****************/
 .intro h3{
