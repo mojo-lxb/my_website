@@ -19,10 +19,8 @@ main{
     color: white;
 } 
 body {
-    padding: 25px;
     color: #ffffff;
     background-color: rgb(11, 11, 11);
-    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
 }
@@ -31,9 +29,19 @@ h1,h2, h3{
     color: #ffffff;
     text-align: center;    
 }
-.headings{
-    font-family:'Source Code Pro', monospace,sans-serif;
+
+.headings {
+    font-family: 'Source Code Pro', monospace,sans-serif;
     text-align: center;
+    font-size: 24px;
+    padding: 24px 0;
+    display: block;
+    position: relative;
+    width: 100%;
+    left: 0;
+    background: rgba(0,0,0,.2);
+    color: #26f4f4;
+    font-weight: 100;
 }
 /************ BUTTONS ******************/
 button{
@@ -52,12 +60,18 @@ button:hover{
     color: #26f4f4;
 }
 /********** DROP DOWN **************/
-  .navbar{
+.navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(11, 11, 11);
+    width: 100%;
+    background: black;
     height: 85px;
     min-width: 300px;
-  }
+    z-index: 3;
+    box-shadow: 0 20px 70px #1E1E1E;
+}
 .dropDown{
     align-self: center;
     margin-right: 25px;  
@@ -87,7 +101,7 @@ button:hover{
 }
 
 /*************** HEAD SLIDE *******************/
-.headSlider{
+.headSlider {
     width: 100%;
     position: relative;
 }
@@ -127,9 +141,12 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    height: 650px;
     position: relative;
+    display: block;
     margin: auto;
+    overflow: hidden;
     animation: fade 4s ease-in both;
 }
 
@@ -175,16 +192,13 @@ img {
     animation-delay: 4s;
 }
 /************************ FADE UP *****************************/
-#fadeUp { 
+#fadeUp {
     margin: auto;
     margin-top: 150px;
     width: 200px;
     text-align: center;
     opacity: 0;
     animation: fadeUp 1s ease-in both;
-}
-
-#fadeUp {
     animation-delay: 3s;
 }
     
@@ -302,7 +316,31 @@ to {
     display: block !important;
     column-count: 2;
 }
-
+/****************** Certificates **********************/
+.certif {
+    margin: 50px auto;
+    min-width: 400px;
+    max-width: 1200px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 0 0 6px 6px;
+    text-align: center;
+}
+.certif ul {
+    display: flex;
+    column-count: 2;
+    list-style: none;
+    padding: 24px;
+    justify-content: center;
+}
+li p {
+    font-size: 14px;
+    font-weight: 100 !important;
+}
+li {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
 /******************* Hobby **************************/
 .hobby{
     margin: auto;
@@ -358,7 +396,7 @@ input,textarea,label{
     color: white;
 }
 .location embed{
-margin: auto;
+    margin: auto;
 }
 .location :nth-child(2){
     display: none;
@@ -569,23 +607,32 @@ li{
         max-width:1200px;
     }
       /*********** Fade Welcome text *************/
-  .introFade {
-    margin: auto;
-    font-size: 35px !important;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
-  }
+      .introFade {
+        margin: auto;
+        font-size: 35px !important;
+        left: 40%;
+        top: 55%;
+    }
+    #fadeUp {
+        position: relative;
+        display: inline;
+    }
+    #fadeDown {
+        position: absolute;
+        display: flex;
+        left: 0px;
+        bottom: 0px;
+    }
   /*************** INTRO ****************/
-.intro h3{
-    display: flex;
-    align-items: end;
-    font-size: 15px;
-}
-.location :nth-child(1){
-    display: none;
-}
-.location :nth-child(2){
-    display: block;
-}
+    .intro h3{
+        display: flex;
+        align-items: end;
+        font-size: 15px;
+    }
+    .location:nth-child(1){
+        display: none;
+    }
+    .location :nth-child(2){
+        display: block;
+    }
 }
