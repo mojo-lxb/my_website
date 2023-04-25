@@ -19,6 +19,7 @@ h1,h2, h3{
     color: #ffffff;
     text-align: center;    
 }
+
 .headings{
     font-family:'Source Code Pro', monospace,sans-serif;
     text-align: center;
@@ -297,6 +298,13 @@ to {
 #dark-mode{
     width: 16rem;
     height: 19.5rem;
+}
+/****************** Text about me **********************/
+.text :nth-child(1){
+    padding-bottom: 10px;
+}
+h4{
+    color: #26f4f4;
 }
 
 /****************** SKILLS **********************/
