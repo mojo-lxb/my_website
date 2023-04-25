@@ -90,7 +90,7 @@ button:hover{
 .text{
     padding: 25px;
     color: white;
-} 
+}
 .text :nth-child(1){
     color: #26f4f4;
 }
