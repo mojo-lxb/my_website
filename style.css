@@ -77,7 +77,11 @@ button:hover{
     color: white;
     padding: 10px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .topnav a:hover{
+    text-decoration: underline #26f4f4;
   }
   .icon{
     display: none;
@@ -343,7 +347,7 @@ to {
 .hobby ul{
     display: block;
     column-count: 2;
-    gap: 350px;
+    gap: 90%;
     list-style: none;
     padding: 15px;
 }
