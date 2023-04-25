@@ -11,7 +11,7 @@
 main{
     margin: auto;
     background: rgb(30, 30, 30);
-    box-shadow:  8px 10px #333 ;
+    box-shadow:  8px 10px #33333333 ;
     border-radius: 7px;
     min-width: 400px;
 }
@@ -54,8 +54,11 @@ button:hover{
 }
 /********** DROP DOWN **************/
   .navbar{
+    position:fixed;
     display: flex;
     justify-content: space-between;
+    background-color:  rgb(11, 11, 11);
+    width: 100%;
     height: 85px;
     min-width: 300px;
   }
@@ -289,8 +292,6 @@ to {
     height: 19.5rem;
 }
 
-
-
 /****************** SKILLS **********************/
 .skills{
     display:none;
@@ -298,22 +299,40 @@ to {
     min-width: 400px;
     max-width: 1200px;
     background-color:rgb(30, 30, 30);
-    box-shadow:  8px 10px #333 ;
+    box-shadow:  8px 10px #33333333 ;
     border-radius: 7px;
 }
 .skills ul{
     display: block !important;
     column-count: 2;
 }
-
+/****************** Certificate **********************/
+.certif{
+    margin: auto;
+    min-width: 400px;
+    max-width: 1200px;
+    background-color:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333 ;
+    border-radius: 7px;
+}
+.certif ul{
+    display: flex;
+    column-count: 2;
+    list-style: none;
+}
 /******************* Hobby **************************/
 .hobby{
     margin: auto;
     min-width: 400px;
     max-width: 1200px;
     background-color:rgb(30, 30, 30);
-    box-shadow:  8px 10px #333 ;
+    box-shadow:  8px 10px #33333333 ;
     border-radius: 7px;
+}
+.hobby ul{
+    display: block;
+    column-count: 2;
+    list-style: none;
 }
 /************** Figma *******************/
 .figma{
@@ -321,7 +340,7 @@ to {
     min-width: 400px;
     max-width: 1200px;
     background-color:rgb(30, 30, 30);
-    box-shadow:  8px 10px #333 ;
+    box-shadow:  8px 10px #33333333  ;
     border-radius: 7px;
     padding: 15px;
     display: grid;
@@ -341,7 +360,7 @@ to {
     min-width: 400px;
     max-width: 1200px;
     background-color:rgb(30, 30, 30);
-    box-shadow:  8px 10px #333 ;
+    box-shadow:  8px 10px #33333333 ;
     border-radius: 7px;
 }
 #contact form{
@@ -405,7 +424,7 @@ li{
     max-width: 1200px;
     width: 100%;
     background:rgb(30, 30, 30);
-    box-shadow:  8px 10px #333 ;
+    box-shadow:  8px 10px #33333333 ;
     padding: 10px 20px;
     border-radius: 7px;
 }
@@ -445,7 +464,17 @@ li{
 
 /******* HTML ProgressBar ********/
 .skill-per.css{
-    width: 45%;
+    width: 40%;
+    animation-delay:0.4s;
+}
+/******* Bootstrap ProgressBar ********/
+.skill-per.bootstrap{
+    width: 30%;
+    animation-delay:0.4s;
+}
+/******* Javascript ProgressBar ********/
+.skill-per.javascript{
+    width: 25%;
     animation-delay:0.4s;
 }
 
@@ -481,6 +510,9 @@ li{
     border-radius: 20%;
     z-index: -1;
     background: #ffffff;
+}
+.tooltip{
+    font-size: 16px;
 }
 /************************** MEDIA QUERY MOBILE *****************************/
 
