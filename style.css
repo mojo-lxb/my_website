@@ -380,6 +380,18 @@ input,textarea,label{
 }
 
 /************** GOOGLE MAP *******************/
+.location{
+    margin: auto;
+    min-width: 400px;
+    max-width: 1200px;
+    background-color:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333  ;
+    border-radius: 7px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
 .location h1{
     color: white;
 }
@@ -632,10 +644,11 @@ li{
     align-items: end;
     font-size: 15px;
 }
-.location :nth-child(1){
+  /*************** Localisation ****************/
+#carte{
     display: none;
 }
 .location :nth-child(2){
-    display: block;
+    display:flex;
 }
 }
