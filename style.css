@@ -46,6 +46,7 @@ button:hover{
     box-shadow:  5px 5px #26f4f465;
     color: #26f4f4;
 }
+
 /********** DROP DOWN **************/
   .navbar{
     position:fixed;
@@ -93,10 +94,26 @@ button:hover{
 
 .text{
     padding: 25px;
-    color: white;
+    color: rgb(240, 240, 240);
 }
-.text :nth-child(1){
+h4{
     color: #26f4f4;
+    margin-bottom:20px ;
+}
+/*********** Text animation ***********/
+.paragraph{
+    display: block;
+    opacity: 0;
+    animation: reveal 0.8s forwards var(--d);
+}
+
+@keyframes reveal{
+    from{ 
+        transform: translateY(20px) ;
+    } to {
+        opacity: 1;
+        transform: none;
+    }        
 }
   /*************** INTRO ****************/
   .introFade {
@@ -158,9 +175,6 @@ img {
   text-align: center;
 }
 
-.active {
-  background-color: rgb(255, 255, 255);
-}
 
 /* Fading animation */
 .fade {
@@ -412,11 +426,11 @@ input,textarea,label{
 .location h1{
     color: white;
 }
-.location embed{
-margin: auto;
+#littleMap{
+    margin: auto;
 }
-.location :nth-child(2){
-    display: none;
+#bigMap{
+    display:none;
 }
 
 /***************** FOOTER ************************/
@@ -662,10 +676,12 @@ li{
     font-size: 15px;
 }
   /*************** Localisation ****************/
-#carte{
+#littleMap{
     display: none;
 }
-.location :nth-child(2){
+#bigMap{
     display:flex;
+    justify-content: center;
+    align-items: center;
 }
 }
