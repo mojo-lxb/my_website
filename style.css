@@ -154,7 +154,7 @@ img {
 }
 
 .active {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Fading animation */
@@ -315,11 +315,14 @@ to {
     background-color:rgb(30, 30, 30);
     box-shadow:  8px 10px #33333333 ;
     border-radius: 7px;
+    display: flex;
+    justify-content: center;
 }
 .certif ul{
     display: flex;
     column-count: 2;
     list-style: none;
+    padding: 15px;
 }
 /******************* Hobby **************************/
 .hobby{
@@ -329,11 +332,15 @@ to {
     background-color:rgb(30, 30, 30);
     box-shadow:  8px 10px #33333333 ;
     border-radius: 7px;
+    display: flex;
+    justify-content: center;
 }
 .hobby ul{
     display: block;
     column-count: 2;
+    gap: 350px;
     list-style: none;
+    padding: 15px;
 }
 /************** Figma *******************/
 .figma{
@@ -376,7 +383,9 @@ form button{
 }
 input,textarea,label{
     margin: auto;
-    width: 200px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /************** GOOGLE MAP *******************/
