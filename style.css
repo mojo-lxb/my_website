@@ -410,6 +410,9 @@ input,textarea,label{
     padding: 10px;
     border-radius: 5px;
 }
+#suBtn{
+    margin: auto;
+}
 /************** GOOGLE MAP *******************/
 .location{
     margin: 50px auto;
