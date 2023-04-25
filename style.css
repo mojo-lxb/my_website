@@ -6,19 +6,6 @@
     padding: 0;
     border: 0;
 }
-/*********************** Content Box **************************/
-
-main{
-    margin: auto;
-    background: rgb(30, 30, 30);
-    box-shadow:  8px 10px #33333333 ;
-    border-radius: 7px;
-    min-width: 400px;
-}
-.text{
-    padding: 25px;
-    color: white;
-} 
 body {
     /*padding: 25px;*/
     color: #ffffff;
@@ -35,6 +22,13 @@ h1,h2, h3{
 .headings{
     font-family:'Source Code Pro', monospace,sans-serif;
     text-align: center;
+}
+main{
+    margin: auto;
+    background: rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333 ;
+    border-radius: 7px;
+    min-width: 400px; 
 }
 /************ BUTTONS ******************/
 button{
@@ -91,8 +85,15 @@ button:hover{
     color: white;
 }
 
+/*********************** Text Box **************************/
 
-
+.text{
+    padding: 25px;
+    color: white;
+} 
+.text :nth-child(1){
+    color: #26f4f4;
+}
   /*************** INTRO ****************/
   .introFade {
     margin: auto;
