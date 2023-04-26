@@ -6,9 +6,23 @@
     padding: 0;
     border: 0;
 }
+/*********************** Content Box **************************/
+
+main{
+    margin: auto;
+    background: rgb(30, 30, 30);
+    border-radius: 7px;
+    min-width: 400px;
+}
+.text{
+    padding: 25px;
+    color: white;
+} 
 body {
+    /*padding: 25px;*/
     color: #ffffff;
     background-color: rgb(11, 11, 11);
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
 }
@@ -18,23 +32,15 @@ h1,h2, h3{
     text-align: center;    
 }
 
-.headings {
-    font-family: 'Source Code Pro', monospace,sans-serif;
+.headings{
+    font-family:'Source Code Pro', monospace,sans-serif;
     text-align: center;
-    font-size: 24px;
-    padding: 24px 0;
-    display: block;
-    position: relative;
-    width: 100%;
-    left: 0;
-    background: rgba(0,0,0,.2);
-    color: #26f4f4;
-    font-weight: 100;
 }
 main{
     margin: auto;
     background: rgb(30, 30, 30);
-    border-radius: 0 0 6px 6px;
+    box-shadow:  8px 10px #33333333 ;
+    border-radius: 7px;
     min-width: 400px; 
 }
 /************ BUTTONS ******************/
@@ -53,33 +59,18 @@ button:hover{
     box-shadow:  5px 5px #26f4f465;
     color: #26f4f4;
 }
-#lightBtn input {
-appearance: none;
-border: 1px solid #26f4f4;
-padding: 10px;
-text-align: center;
-color: #26f4f4;
-}
-#lightBtn input::before{
-    content: "darkmode";
-}
-#lightBtn input:checked:before{
-    content: "lightmode";
-    color: #1E1E1E;
-}
+
 /********** DROP DOWN **************/
-.navbar {
-    position: fixed;
+  .navbar{
+    position:fixed;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(11, 11, 11);
+    background-color:  rgb(11, 11, 11);
     width: 100%;
-    background: black;
     height: 85px;
     min-width: 300px;
     z-index: 3;
-    box-shadow: 0 20px 70px #1E1E1E;
-}
+  }
 .dropDown{
     align-self: center;
     margin-right: 25px;  
@@ -88,7 +79,7 @@ color: #26f4f4;
     display: block;
     position: relative;
     overflow:"";
-    background-color: black;
+    background-color: rgb(11, 11, 11);
     right: 0px;
     top: 0px;
     width: 300px;
@@ -123,7 +114,7 @@ h4{
     margin-bottom:20px ;
 }
 /*********** Text animation ***********/
-.paragraph {
+.paragraph{
     display: block;
     opacity: 0;
     animation: reveal 0.8s forwards var(--d);
@@ -180,12 +171,9 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    /* max-width: 1200px; */
-    height: 650px;
+    max-width: 1200px;
     position: relative;
-    display: block;
     margin: auto;
-    overflow: hidden;
     animation: fade 4s ease-in both;
 }
 
@@ -228,7 +216,7 @@ img {
     animation-delay: 4s;
 }
 /************************ Fade up *****************************/
-#fadeUp {
+#fadeUp { 
     margin: auto;
     margin-top: 150px;
     width: 200px;
@@ -337,49 +325,39 @@ to {
     width: 16rem;
     height: 19.5rem;
 }
+/****************** Text about me **********************/
+.text :nth-child(1){
+    padding-bottom: 10px;
+}
+h4{
+    color: #26f4f4;
+}
 
-/****************** Strength **********************/
-.strength{
+/****************** SKILLS **********************/
+.skills{
     display:none;
     min-width: 400px;
     max-width: 1200px;
     background-color:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333 ;
     border-radius: 7px;
 }
-.strength ul{
+.skills ul{
     display: block !important;
     column-count: 2;
 }
-/****************** Certificates **********************/
-.certif {
+
+/******************* HOBBY **************************/
+.hobby{
     margin: 50px auto;
     min-width: 400px;
     max-width: 1200px;
-    background-color: rgb(30, 30, 30);
-}
-.certif ul {
-    display: flex;
-    column-count: 2;
-    list-style: none;
-    padding: 24px;
+    background-color:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333  ;
+    border-radius: 7px;
+    padding: 15px;
+    display: grid;
     justify-content: center;
-}
-li p {
-    font-size: 14px;
-    font-weight: 100 !important;
-}
-li {
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
-}
-/******************* Hobby **************************/
-.hobby {
-    margin: 50px auto;
-    min-width: 400px;
-    max-width: 1200px;
-    background-color: rgb(30, 30, 30);
-    border-radius: 0 0 6px 6px;
     text-align: center;
 }
 .hobby ul{
@@ -389,14 +367,10 @@ li {
     list-style: none;
     padding: 15px;
 }
-/************** Figma *******************/
-.figma{
-    margin: 50px auto;
-    min-width: 400px;
-    max-width: 1200px;
-    background-color: rgb(30, 30, 30);
-    border-radius: 0 0 6px 6px;
-    text-align: center;
+
+/************** GOOGLE MAP *******************/
+.location h1{
+    color: white;
 }
 /***************** Contact Form **************************/
 .contactIcon{
@@ -405,15 +379,7 @@ li {
     justify-content: center;
     gap: 20px;
 }
-/************** Contact *******************/
-#contact{
-    margin: 50px auto;
-    min-width: 400px;
-    max-width: 1200px;
-    background-color:rgb(30, 30, 30);
-    box-shadow:  8px 10px #33333333 ;
-    border-radius: 7px;
-}
+/************** CONTACT *******************/
 #contact form{
     display: grid;
     text-align: start;
@@ -422,35 +388,7 @@ li {
     max-width: 1200px;
 }
 form button{
-    margin: 30px;
-}
-form input,textarea,label{
-    margin: auto;
-    width: 300px;
-    padding: 10px;
-    border-radius: 5px;
-}
-#suBtn{
-    margin: auto;
-}
-/************** GOOGLE MAP *******************/
-.location{
-    margin: 50px auto;
-    min-width: 400px;
-    max-width: 1200px;
-    background-color: rgb(30, 30, 30);
-    border-radius: 0 0 6px 6px;
-    text-align: center;
-}
-
-.location h1{
-    color: white;
-}
-#littleMap{
-    margin: auto;
-}
-#bigMap{
-    display:none;
+    margin:20px;
 }
 
 /***************** FOOTER ************************/
@@ -473,7 +411,6 @@ li{
 }
 /***************** ProgressBar ************************/
 .progressBar{
-    margin: 50px auto;
     max-width: 1200px;
     min-width: 400px;
 }
@@ -483,12 +420,14 @@ li{
     /*column-count: 4 !important;*/
 }
 .box{
-    margin: 50px auto;
-    min-width: 400px;
+    margin: auto;
+    position: relative;
     max-width: 1200px;
-    background-color: rgb(30, 30, 30);
-    border-radius: 0 0 6px 6px;
-    text-align: center;
+    width: 100%;
+    background:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333 ;
+    padding: 10px 20px;
+    border-radius: 7px;
 }
 .box .skill-box{
     width: 100%;
@@ -670,34 +609,27 @@ li{
         max-width:1200px;
     }
       /*********** Fade Welcome text *************/
-      .introFade {
-        margin: auto;
-        font-size: 35px !important;
-        left: 40%;
-        top: 55%;
-    }
-    #fadeUp {
-        position: relative;
-        display: inline;
-    }
-    #fadeDown {
-        position: absolute;
-        display: flex;
-        left: 0px;
-        bottom: 0px;
-    }
+  .introFade {
+    margin: auto;
+    font-size: 35px !important;
+    left: 40%;
+    top: 55%;
+    /*transform: translate(-50%, -50%);*/
+  }
+  #fadeDown {
+    position: absolute;
+    display: flex;
+    left: 0px;
+    bottom: 0px;
+  }
+  #fadeUp {
+    position: relative;
+    display:inline;
+  }
   /*************** INTRO ****************/
-    .intro h3{
-        display: flex;
-        align-items: end;
-        font-size: 15px;
-    }
-      /*************** Localisation****************/
-#littleMap{
-        display: none;
-    }
-    #bigMap{
-        display:flex;
-        margin: auto;
-    }
+.intro h3{
+    display: flex;
+    align-items: end;
+    font-size: 15px;
+}
 }
