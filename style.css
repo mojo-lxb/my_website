@@ -284,7 +284,10 @@ to {
     background-color:rgb(255, 255, 255);
     color: white;
 }
-.dark-mode .content {
+/*.dark-mode p,h1,h2,h3,ul,li,label .title{
+    color: black;
+}*/
+#dark-mode .content {
     color:rgb(30, 30, 30);
 }
 /************** Photo box ******************/
