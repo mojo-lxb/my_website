@@ -19,7 +19,7 @@ main{
     color: white;
 } 
 body {
-    padding: 25px;
+    /*padding: 25px;*/
     color: #ffffff;
     background-color: rgb(11, 11, 11);
     font-size: 25px;
@@ -31,9 +31,17 @@ h1,h2, h3{
     color: #ffffff;
     text-align: center;    
 }
+
 .headings{
     font-family:'Source Code Pro', monospace,sans-serif;
     text-align: center;
+}
+main{
+    margin: auto;
+    background: rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333 ;
+    border-radius: 7px;
+    min-width: 400px; 
 }
 /************ BUTTONS ******************/
 button{
@@ -51,12 +59,17 @@ button:hover{
     box-shadow:  5px 5px #26f4f465;
     color: #26f4f4;
 }
+
 /********** DROP DOWN **************/
   .navbar{
+    position:fixed;
     display: flex;
     justify-content: space-between;
+    background-color:  rgb(11, 11, 11);
+    width: 100%;
     height: 85px;
     min-width: 300px;
+    z-index: 3;
   }
 .dropDown{
     align-self: center;
@@ -78,7 +91,11 @@ button:hover{
     color: white;
     padding: 10px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .topnav a:hover{
+    text-decoration: underline #26f4f4;
   }
   .icon{
     display: none;
@@ -86,22 +103,42 @@ button:hover{
     color: white;
 }
 
-/*************** HEAD SLIDE *******************/
-.headSlider{
-    width: 100%;
-    position: relative;
+/*********************** Text Box **************************/
+
+.text{
+    padding: 25px;
+    color: rgb(240, 240, 240);
 }
-.introFade {
+h4{
+    color: #26f4f4;
+    margin-bottom:20px ;
+}
+/*********** Text animation ***********/
+.paragraph{
+    display: block;
+    opacity: 0;
+    animation: reveal 0.8s forwards var(--d);
+}
+
+@keyframes reveal{
+    from{ 
+        transform: translateY(20px) ;
+    } to {
+        opacity: 1;
+        transform: none;
+    }        
+}
+  /*************** INTRO ****************/
+  .introFade {
     margin: auto;
     position: absolute;
     font-family:'Source Code Pro', monospace,sans-serif;
     font-size: 15px;
-    left: 50%;
-    top: 20%;
+    left: 65%;
+    top: 40%;
     transform: translate(-50%, -50%);
     z-index: 1;
   }
-  /*************** INTRO ****************/
 .intro h3{
     display: flex;
     align-items: end;
@@ -117,6 +154,13 @@ h1 span{
 }
 
 /*********************** AUTOMATIC SLIDER *******************************/
+
+
+/*************** HEAD SLIDE *******************/
+.headSlider{
+    width: 100%;
+    position: relative;
+}
 .mySlides {
     display: none;
     filter: grayscale(0.8);
@@ -144,9 +188,6 @@ img {
   text-align: center;
 }
 
-.active {
-  background-color: rgb(255, 0, 0);
-}
 
 /* Fading animation */
 .fade {
@@ -164,17 +205,17 @@ img {
     position: absolute;
     z-index: 1;
 }
+/************************ Fade Down *****************************/
 #fadeDown{
     margin: auto;
-    width: 200px;
-    height: 180px;
+    height: 125px;
     opacity: 0;
     margin-top: 60px;
     text-align: center;
     animation: fadeDown 1s ease-in both;
     animation-delay: 4s;
 }
-/************************ FADE UP *****************************/
+/************************ Fade up *****************************/
 #fadeUp { 
     margin: auto;
     margin-top: 150px;
@@ -182,9 +223,6 @@ img {
     text-align: center;
     opacity: 0;
     animation: fadeUp 1s ease-in both;
-}
-
-#fadeUp {
     animation-delay: 3s;
 }
     
@@ -240,6 +278,7 @@ to {
     margin: auto;
 }
 #introduction{
+    margin: 50px auto;
     padding: 50px;
 }
 .imgBox{
@@ -286,30 +325,66 @@ to {
     width: 16rem;
     height: 19.5rem;
 }
-
-
+/****************** Text about me **********************/
+.text :nth-child(1){
+    padding-bottom: 10px;
+}
+h4{
+    color: #26f4f4;
+}
 
 /****************** SKILLS **********************/
 .skills{
     display:none;
-    margin: auto;
     min-width: 400px;
     max-width: 1200px;
     background-color:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333 ;
     border-radius: 7px;
 }
 .skills ul{
     display: block !important;
     column-count: 2;
 }
-
-/******************* Hobby **************************/
-.hobby{
-    margin: auto;
+/****************** Certificate **********************/
+.certif{
+    margin: 50px auto;
     min-width: 400px;
     max-width: 1200px;
     background-color:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333  ;
     border-radius: 7px;
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.certif ul{
+    display: flex;
+    column-count: 2;
+    list-style: none;
+    padding: 15px;
+}
+/******************* Hobby **************************/
+.hobby{
+    margin: 50px auto;
+    min-width: 400px;
+    max-width: 1200px;
+    max-width: 1200px;
+    background-color:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333  ;
+    border-radius: 7px;
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.hobby ul{
+    display: block;
+    column-count: 2;
+    gap: 90%;
+    list-style: none;
+    padding: 15px;
 }
 /************** Figma *******************/
 .figma{
@@ -350,18 +425,34 @@ form button{
 }
 input,textarea,label{
     margin: auto;
-    width: 200px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#suBtn{
+    margin: auto;
+}
+/************** GOOGLE MAP *******************/
+.location{
+    margin: 50px auto;
+    min-width: 400px;
+    max-width: 1200px;
+    background-color:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333  ;
+    border-radius: 7px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 
-/************** GOOGLE MAP *******************/
 .location h1{
     color: white;
 }
-.location embed{
-margin: auto;
+#littleMap{
+    margin: auto;
 }
-.location :nth-child(2){
-    display: none;
+#bigMap{
+    display:none;
 }
 
 /***************** FOOTER ************************/
@@ -399,6 +490,7 @@ li{
     max-width: 1200px;
     width: 100%;
     background:rgb(30, 30, 30);
+    box-shadow:  8px 10px #33333333 ;
     padding: 10px 20px;
     border-radius: 7px;
 }
@@ -438,7 +530,17 @@ li{
 
 /******* HTML ProgressBar ********/
 .skill-per.css{
-    width: 45%;
+    width: 40%;
+    animation-delay:0.4s;
+}
+/******* Bootstrap ProgressBar ********/
+.skill-per.bootstrap{
+    width: 30%;
+    animation-delay:0.4s;
+}
+/******* Javascript ProgressBar ********/
+.skill-per.javascript{
+    width: 25%;
     animation-delay:0.4s;
 }
 
@@ -474,6 +576,9 @@ li{
     border-radius: 20%;
     z-index: -1;
     background: #ffffff;
+}
+.tooltip{
+    font-size: 16px;
 }
 /************************** MEDIA QUERY MOBILE *****************************/
 
@@ -572,9 +677,19 @@ li{
   .introFade {
     margin: auto;
     font-size: 35px !important;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
+    left: 40%;
+    top: 55%;
+    /*transform: translate(-50%, -50%);*/
+  }
+  #fadeDown {
+    position: absolute;
+    display: flex;
+    left: 0px;
+    bottom: 0px;
+  }
+  #fadeUp {
+    position: relative;
+    display:inline;
   }
   /*************** INTRO ****************/
 .intro h3{
@@ -582,10 +697,13 @@ li{
     align-items: end;
     font-size: 15px;
 }
-.location :nth-child(1){
+  /*************** Localisation ****************/
+#littleMap{
     display: none;
 }
-.location :nth-child(2){
-    display: block;
+#bigMap{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 }
