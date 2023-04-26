@@ -34,8 +34,7 @@ h1,h2, h3{
 main{
     margin: auto;
     background: rgb(30, 30, 30);
-    box-shadow:  8px 10px #33333333 ;
-    border-radius: 7px;
+    border-radius: 0 0 6px 6px;
     min-width: 400px; 
 }
 /************ BUTTONS ******************/
@@ -54,7 +53,20 @@ button:hover{
     box-shadow:  5px 5px #26f4f465;
     color: #26f4f4;
 }
-
+#lightBtn input {
+appearance: none;
+border: 1px solid #26f4f4;
+padding: 10px;
+text-align: center;
+color: #26f4f4;
+}
+#lightBtn input::before{
+    content: "darkmode";
+}
+#lightBtn input:checked:before{
+    content: "lightmode";
+    color: #1E1E1E;
+}
 /********** DROP DOWN **************/
 .navbar {
     position: fixed;
@@ -76,7 +88,7 @@ button:hover{
     display: block;
     position: relative;
     overflow:"";
-    background-color: rgb(11, 11, 11);
+    background-color: black;
     right: 0px;
     top: 0px;
     width: 300px;
@@ -215,7 +227,7 @@ img {
     animation: fadeDown 1s ease-in both;
     animation-delay: 4s;
 }
-/************************ FADE UP *****************************/
+/************************ Fade up *****************************/
 #fadeUp {
     margin: auto;
     margin-top: 150px;
@@ -326,16 +338,15 @@ to {
     height: 19.5rem;
 }
 
-/****************** SKILLS **********************/
-.skills{
+/****************** Strength **********************/
+.strength{
     display:none;
     min-width: 400px;
     max-width: 1200px;
     background-color:rgb(30, 30, 30);
-    box-shadow:  8px 10px #33333333 ;
     border-radius: 7px;
 }
-.skills ul{
+.strength ul{
     display: block !important;
     column-count: 2;
 }
@@ -345,8 +356,6 @@ to {
     min-width: 400px;
     max-width: 1200px;
     background-color: rgb(30, 30, 30);
-    border-radius: 0 0 6px 6px;
-    text-align: center;
 }
 .certif ul {
     display: flex;
@@ -415,7 +424,7 @@ li {
 form button{
     margin: 30px;
 }
-input,textarea,label{
+form input,textarea,label{
     margin: auto;
     width: 300px;
     padding: 10px;
@@ -474,14 +483,12 @@ li{
     /*column-count: 4 !important;*/
 }
 .box{
-    margin: auto;
-    position: relative;
+    margin: 50px auto;
+    min-width: 400px;
     max-width: 1200px;
-    width: 100%;
-    background:rgb(30, 30, 30);
-    box-shadow:  8px 10px #33333333 ;
-    padding: 10px 20px;
-    border-radius: 7px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 0 0 6px 6px;
+    text-align: center;
 }
 .box .skill-box{
     width: 100%;
