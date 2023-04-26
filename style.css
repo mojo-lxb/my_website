@@ -31,6 +31,14 @@ h1,h2, h3{
     color: #26f4f4;
     font-weight: 100;
 }
+.contentBox{
+    margin: 50px auto;
+    background: rgb(30, 30, 30);
+    border-radius: 0 0 6px 6px;
+    min-width: 400px; 
+    max-width: 1200px;
+    text-align: center;
+}
 main{
     margin: auto;
     background: rgb(30, 30, 30);
@@ -357,18 +365,10 @@ to {
     min-width: 400px;
 }
 .progressBar ul{
-    display: block;
+    display:block;
     list-style: none;
-    /*column-count: 4 !important;*/
 }
-.box{
-    margin: 50px auto;
-    min-width: 400px;
-    max-width: 1200px;
-    background-color: rgb(30, 30, 30);
-    border-radius: 0 0 6px 6px;
-    text-align: center;
-}
+
 .box .skill-box{
     width: 100%;
     margin: 25px 0;
@@ -380,7 +380,7 @@ to {
     color: white;    /*#333;*/
 }
 .skill-box .skill-bar{
-    height: 8px;
+    height: 10px;
     width: 100%;
     border-radius: 6px;
     margin-top: 6px;
@@ -445,7 +445,7 @@ to {
     position: absolute;
     left: 96%; /* Progress level */
     padding: 0 5px 0 5px;
-    bottom: -1px;
+    bottom: "";
     height: 10px;
     width: 10px;
     border-radius: 20%;
@@ -453,19 +453,15 @@ to {
     background: #ffffff;
 }
 .tooltip{
-    font-size: 16px;
+    font-size: 20px;
+    
 }
 /****************** Certificates **********************/
-.certif {
-    margin: 50px auto;
-    min-width: 400px;
-    max-width: 1200px;
-    background-color: rgb(30, 30, 30);
-}
-.certif ul {
+
+#certif ul{
     display: flex;
     column-count: 2;
-    list-style: none;
+    
     padding: 24px;
     justify-content: center;
 }
@@ -477,9 +473,10 @@ li {
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 600;
+    list-style: none;
 }
 /******************* Hobby **************************/
-.hobby {
+.contentBox{
     margin: 50px auto;
     min-width: 400px;
     max-width: 1200px;
@@ -487,21 +484,21 @@ li {
     border-radius: 0 0 6px 6px;
     text-align: center;
 }
-.hobby ul{
+#hobby ul{
     display: block;
     column-count: 2;
-    gap: 90%;
     list-style: none;
     padding: 15px;
 }
 /************** Figma *******************/
-.figma{
-    margin: 50px auto;
-    min-width: 400px;
-    max-width: 1200px;
-    background-color: rgb(30, 30, 30);
-    border-radius: 0 0 6px 6px;
-    text-align: center;
+#figma{
+    display: block;
+}
+#figma img{
+    padding: 30px;
+}
+#figma p{
+    padding-bottom: 30px;
 }
 /***************** Contact Form **************************/
 .contactIcon{
@@ -535,26 +532,19 @@ form input,textarea,label{
     border-radius: 5px;
 }
 #suBtn{
-    margin: auto;
+    margin: 10px 0px 20px;
+    
 }
 /************** GOOGLE MAP *******************/
-.location{
-    margin: 50px auto;
-    min-width: 400px;
-    max-width: 1200px;
-    background-color: rgb(30, 30, 30);
-    border-radius: 0 0 6px 6px;
-    text-align: center;
-}
 
-.location h1{
-    color: white;
-}
 #littleMap{
     margin: auto;
+    padding: 30px;
+    
 }
 #bigMap{
     display:none;
+    padding: 30px;
 }
 
 /***************** FOOTER ************************/
@@ -587,10 +577,12 @@ li{
     .textSlider {
       font-size: 11px
   }
-  .progressBar ul{
+  /********* Progress Bar *********/
+  /*.progressBar ul{
     display:block;
-    column-count: 2;    
-    }
+    column-count: 2;
+    }*/
+
   }
 /****************************** MEDIA QUERY IPAD  *******************************************/
 
@@ -650,7 +642,14 @@ li{
         position: relative;
         overflow: hidden;        
     }
-
+/********* Progress Bar *********/
+    .progressBar ul{
+        display:block;
+        column-count: 2;    
+        }
+        .skill-box{
+            padding: 15px 20px;
+        }
 }
  /********* MAIN CONTENT *********/
  .text{
@@ -699,5 +698,9 @@ li{
     #bigMap{
         display:flex;
         margin: auto;
+    }
+
+    .skill-box{
+        padding: 25px 40px;
     }
 }
