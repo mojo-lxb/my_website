@@ -187,7 +187,7 @@ img {
 /* Slideshow container */
 .slideshow-container {
     /* max-width: 1200px; */
-    height: 650px;
+    
     position: relative;
     display: block;
     margin: auto;
@@ -281,8 +281,8 @@ to {
 
 /*********************** Dark mode **************************/
 .dark-mode {
-    background-color:rgb(255, 255, 255);
-    color: white;
+    background-color:rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
 }
 /*.dark-mode p,h1,h2,h3,ul,li,label .title{
     color: black;
@@ -299,7 +299,7 @@ to {
     margin: auto;
 }
 #introduction{
-    margin: 50px auto;
+    margin: auto;
     padding: 50px;
 }
 .imgBox{
