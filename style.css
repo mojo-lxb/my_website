@@ -105,6 +105,11 @@ color: #26f4f4;
     align-self: center;
     margin-right: 25px;  
 }
+.icon{
+    display: none;
+    text-decoration: none;
+    color: white;
+}
   .topnav {
     display: block;
     position: relative;
@@ -117,19 +122,30 @@ color: #26f4f4;
   }
   .topnav a {
     color: white;
+    position: relative;
     padding: 10px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
   }
-  .topnav a:hover{
-    text-decoration: underline #26f4f4;
+
+  /****** Underline Hover effect *******/
+  .topnav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#26f4f4;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
   }
-  .icon{
-    display: none;
-    text-decoration: none;
-    color: white;
-}
+  .topnav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 /*********************** Text Box **************************/
 
@@ -216,8 +232,6 @@ img {
   width: 100%;
   text-align: center;
 }
-
-
 /* Fading animation */
 .fade {
     animation-name: fade;
