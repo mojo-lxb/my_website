@@ -7,6 +7,16 @@ window.addEventListener("blur",()=>{
 window.addEventListener("focus",()=>{
     document.title = docTitle;
 })
+
+        /*********** Drop Down Menu ***************/
+function drop() {
+  let x = document.querySelector(".topnav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
         /************ DARK MODE **************/
 function myFunction() {
   let theme = document.body;
@@ -37,14 +47,13 @@ function showSlides() {
 /***************** See more Button *********************/
 
 function seeMore() {
-  let more = document.querySelector(".skills");
+  let more = document.querySelector(".strength");
   if (more.style.display === "none") {
     more.style.display = "block";
   } else {
     more.style.display = "none";
   }
 } 
-
 
 /***************** Fade In Intro *********************/
 
