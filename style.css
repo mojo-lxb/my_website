@@ -129,24 +129,6 @@ color: #26f4f4;
     font-weight: 600;
   }
 
-  /****** Underline Hover effect *******/
-  .topnav a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color:#26f4f4;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  .topnav a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
 /*********************** Text Box **************************/
 
 .text{
@@ -632,7 +614,7 @@ li{
         text-align: center;
         z-index: 1;
     }
-  
+    
     #fadeDown {
         display: flex;
 }
@@ -728,5 +710,22 @@ li{
 
     .skill-box{
         padding: 25px 40px;
+    }
+      /****** Underline Hover effect *******/
+    .topnav a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color:#26f4f4;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .topnav a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 }
