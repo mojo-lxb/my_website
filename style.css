@@ -542,7 +542,8 @@ form input,textarea,label{
     border-radius: 5px;
 }
 #suBtn{
-    margin: 10px 0px 20px;
+    margin:25px auto;
+    width: 105px;
 }
 /************** GOOGLE MAP *******************/
 
