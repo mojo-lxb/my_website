@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Hunt</title>
+    <style>
+        #playground{
+            width: 800px;
+            height: 800px;
+            margin: 50px auto;
+            border: 1px dashed black;
+            border-radius: 10px;
+            /* Because duck will use Position absolute */
+            position: relative;
+            overflow:hidden;
+        }
+
+        #duck{
+            background-color:  green;
+            width: 10%;
+            height:10%; 
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left:0;
+            font-size:30px;
+            font-weight: bold;
+            color:white;
+        }
+
+        #restart{
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            font-size: 50px;
+            text-align: center;
+            background-color: rgba(128,128,128, 0.8);
+            z-index: 1;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="restart">
+        <h1>RESTART</h1>
+        <h2>Keyboard : <span id="scoreK"></span> </h2>
+        <h2>Mouse : <span id="scoreM" ></span></h2>
+    </div>
+    <section id="playground">
+        <article id="duck"> >o)<br>(_></article>
+    </section>
+    
+    <script>
+        // High Level breakdown / toughts : 
+            // I need: a duck, score for mouse, score for keyboard,
+            // when it arrives to the bottum to appear on top
+            // mouse win condition : when I HIT with the mouse
+            // move with duck with keyboard
+            // duck win condition : Escape time to give points to the keyboard 
+            // Game Over 
+            // Restart 
+
+            const duckEl = document.querySelector('#duck');
+            let score1 = 0;
+            let score2 = 0;
+
+            // When I click on the duck, the duck dies ...
+            
+            //Definition
+            function hit(){
+                duckEl.style.backgroundColor = 'red';
+                score2++;
+                gameOver();
+            }
+            //Call
+            duckEl.addEventListener('click',hit);
+
+            // when I press a key on the website, the duck moves
+            // The duck move to the bottom when I press the down arrow
+            document.addEventListener('keydown', move);
+
+            let positionTop = 0;
+
+            function move (event){
+                // logic 
+                if (event.key == "ArrowDown"){
+                    positionTop = positionTop + 10;
+                }
+                //limits 
+                if(positionTop > 90){
+                    positionTop = 0; 
+                }
+                duckEl.style.top = positionTop + "%"; // CSS expect "10%" not "10"
+            }
+
+            // win condition for the duck
+            const espaceTime = 5 * 1000;
+            function duckEscaped() {
+                duckEl.style.backgroundColor = "blue";
+                score1++;
+               gameOver();
+            }
+            //Time event (will launch in ... 15 sec) 
+            let timer = setTimeout(duckEscaped, espaceTime);
+
+            function gameOver(){
+                //remove TimOut 
+                clearTimeout(timer);
+                // remov El
+                duckEl.removeEventListener('click', hit);
+                document.removeEventListener('keydown', move);
+                document.querySelector('#restart').style.display = "block";
+                //update the score board
+                document.querySelector('#scoreK').innerText = score1;
+                document.querySelector('#scoreM').innerText = score2;
+            }
+            document.querySelector('#restart').addEventListener('click', restart);
+
+            function restart(){
+                document.querySelector('#restart').style.display = "none";
+                duckEl.addEventListener('click', hit);
+                document.addEventListener('keydown',move);
+                 // reset the color /CSS of the duck 
+                 duckEl.style.top = 0;
+                 duckEl.style.backgroundColor = "green";
+                 positionTop = 0;
+                 timer = setTimeout (duckEscaped, espaceTime);
+            }
+
+    </script>
+</body>
+</html>
