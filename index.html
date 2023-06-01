@@ -296,7 +296,9 @@
      <section class ="contentBox" id="figma">
         <h3 class="headings">&ltProjects/&gt</h3>       
         <p>The Link to the <a target="_blank" href="https://www.figma.com/proto/tjLmpY7w3j1TTNSV6FDPb9/EasyEscape?node-id=10-100&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A100" target="_blank">Figma</a> folder.</p>
-        <p> The Link to the Weewander project <a href="https://github.com/mojo-lxb/wee_wander"></a></p>
+        <img src="img\figma-pic.JPG" width="80%">  
+        <p> The Link to the <a href="https://github.com/mojo-lxb/wee_wander">Weewander project.</a></p>
+        <img src="img/Capture d’écran 2023-05-30 à 17.22.39 copie.png" width="80%">  
     </section>
     <!--******************* Figma ******************-->
     
@@ -304,6 +306,7 @@
         <h3 class="headings">&ltFigma/&gt</h3>
         <img src="img\figma-pic.JPG" width="80%">        
         <p>The Link to the <a  target="_blank" href="https://www.figma.com/proto/tjLmpY7w3j1TTNSV6FDPb9/EasyEscape?node-id=10-100&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A100" target="_blank">Figma</a> folder.</p>
+
     </section>
        <!-- ************ Contact Form **************** -->
        
@@ -349,10 +352,9 @@
 
 
     <script> 
-    // Make an AJAX call to retrieve the JSON data from action.php
-    // Place the JavaScript code here
+    // AJAX call to retrieve the JSON data from action.php
     $(document).ready(function() {
-      // Make an AJAX call to retrieve the JSON data from action.php
+      // AJAX call to retrieve the JSON data from action.php
       $.ajax({
         url: "action.php",
         method: "GET",
@@ -362,12 +364,10 @@
           console.log(response); // Output the JSON data to the console
     
           // You can access individual properties of the JSON object
-          var name = response.name;
-          var email = response.email;
-          var age = response.age;
+          let name = response.name;
+          let email = response.email;
+          let age = response.age;
     
-          // Do something with the retrieved data
-          // ...
         },
         error: function(xhr, status, error) {
           // Handle the error
