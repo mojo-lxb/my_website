@@ -560,7 +560,7 @@ li {
     min-width: 400px;
     max-width: 1200px;
 }
-div #error-{
+form span{
     text-align: center;
     padding: 10px;
 }
