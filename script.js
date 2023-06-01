@@ -96,4 +96,33 @@ elements.forEach(element => {
 
 
 
+/************************** viewport animation *******************************/
 
+// Get all the skill-per elements
+let skillPerElements = document.querySelectorAll('.skill-per');
+
+// Function to check if an element is in the viewport
+function isElementInViewport(element) {
+  let rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to animate the skill-per elements
+function animateProgressBar() {
+  skillPerElements.forEach(function(element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('progress-animate');
+    }
+  });
+}
+
+// Trigger the animation when the page loads
+animateProgressBar();
+
+// Trigger the animation when scrolling
+window.addEventListener('scroll', animateProgressBar);
