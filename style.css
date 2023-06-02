@@ -210,7 +210,7 @@ h1 span{
 #arrow {
     position: absolute;
     left: 50%;
-    bottom: -45vh;
+    bottom: -37vh;
     z-index: 99;
     /*
     display: flex;
