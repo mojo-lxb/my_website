@@ -61,6 +61,7 @@ h1,h2, h3{
 main{
     margin: auto;
     background: rgb(30, 30, 30);
+    box-shadow: 0px 15px 20px black;
     border-radius: 0 0 6px 6px;
     min-width: 400px; 
 }
@@ -100,12 +101,13 @@ color: #26f4f4;
     display: flex;
     justify-content: space-between;
     background-color: rgb(11, 11, 11);
+    padding: 0px 30px;
     width: 100%;
     background: black;
     height: 85px;
     min-width: 300px;
     z-index: 3;
-    box-shadow: 0 20px 50px #1E1E1E;
+    box-shadow: 0 15px 25px #121212;
 }
 .dropDown{
     align-self: center;
@@ -402,6 +404,7 @@ h4{
     margin: auto;
     max-width: 1200px;
     min-width: 400px;
+    box-shadow: 0px 15px 20px black;
 }
 .progressBar ul{
     display:block;
@@ -543,6 +546,7 @@ li {
     min-width: 400px;
     max-width: 1200px;
     background-color: rgb(30, 30, 30);
+    box-shadow: 0px 15px 20px black;
     border-radius: 0 0 6px 6px;
     text-align: center;
 }
