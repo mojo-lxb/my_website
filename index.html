@@ -281,19 +281,31 @@
      <!--******************* Projects ******************-->
     
      <section class ="contentBox" id="projects">
-        <h3 class="headings">&ltProjects/&gt</h3>       
-        <p>Figma project : Easy Escape</p>
-        <p>Here's the Link to the <a target="_blank" href="https://www.figma.com/proto/tjLmpY7w3j1TTNSV6FDPb9/EasyEscape?node-id=10-100&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A100" target="_blank">Figma</a> folder.</p>
-        <a target="_blank" href="https://www.figma.com/proto/tjLmpY7w3j1TTNSV6FDPb9/EasyEscape?node-id=10-100&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A100" target="_blank"><img src="img\figma-pic.JPG" width="80%"></a>  
-        <p> The Link to the Git repository <a href="https://github.com/mojo-lxb/wee_wander" target="_blank">Weewander project.</a></p>
-        <a href="https://github.com/mojo-lxb/wee_wander" target="_blank"><img src="img/Capture d’écran 2023-05-30 à 17.22.39 copie.png" width="80%"></a>  
+        <h3 class="headings">&ltProjects/&gt</h3>   
+        <div> 
+            <p>Figma project : Easy Escape</p>
+            <p>Easy Escape is a premier mobile app that allows users to book first-class flights and high-class hotels worldwide. 
+                Experience luxury travel with seamless booking, personalized recommendations, and exclusive services for an unforgettable journey.<br>
+                Elevate your travel experience with Easy Escape. </p>
+            <a target="_blank" href="https://www.figma.com/proto/tjLmpY7w3j1TTNSV6FDPb9/EasyEscape?node-id=10-100&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A100" target="_blank"><img src="img\figma-pic.JPG" width="80%"></a> 
+            <p>Here's the Link to the <a target="_blank" href="https://www.figma.com/proto/tjLmpY7w3j1TTNSV6FDPb9/EasyEscape?node-id=10-100&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A100" target="_blank">Figma</a> folder.</p>
+        </div>
+        <hr>
+        <div> 
+            <p>Welcome to Wee Wander, your go-to platform for hiking, trekking, and mountain biking in Luxembourg. <br>
+                Connect with fellow enthusiasts, create exciting events, and explore the breathtaking natural landscapes. <br>
+                With Wee Wander, you can embark on unforgettable outdoor journeys and arrange carpooling for sustainable travel. <br>
+                Let Luxembourg's nature be your playground. Join Wee Wander today and start your adventure.</p>
+            <a href="https://github.com/mojo-lxb/wee_wander" target="_blank"><img src="img/Capture d’écran 2023-05-30 à 17.22.39 copie.png" width="80%"></a>  
+            <p> The Link to the Git repository <a href="https://github.com/mojo-lxb/wee_wander" target="_blank">Weewander project.</a></p>
+        </div>
     </section>
 
        <!-- ************ Contact Form **************** -->
        
     <section class="contentBox" id="contact">
         <h3 class="headings">&ltContact/&gt</h3>
-        <form id="form" data-netlify-recaptcha="true" data-netlify="true" action="mailto:ch.maurice@hotmail.fr" method="POST">
+        <form id="form" data-netlify-recaptcha="true" data-netlify="true" action="action.php" method="POST">
             <label>First Name</label>
             <input type="text" id="firstName" placeholder="First name" required />
             <span id="error-first"></span>
@@ -311,7 +323,7 @@
             <span id="error-message">    
             </span>
             <div data-netlify-recaptcha="true" id="catpcha"></div>
-    <button id="suBtn" type="submit" onclick="submit()">Submit</button>
+    <button id="suBtn" type="submit" onclick="check()">Submit</button>
         </form>
     </section> 
            <!-- ************ Google Map **************** -->
