@@ -210,7 +210,7 @@ h1 span{
 #arrow {
     position: absolute;
     left: 50%;
-    bottom: -250%;
+    bottom: -45vh;
     z-index: 99;
     /*
     display: flex;
@@ -671,7 +671,7 @@ li{
     bottom: 0px;
     position: absolute;
     bottom: -35vh!important;
-    left: 2%!important;
+    left: 1%!important;
     }
     .navbar{
         height: 60px;
