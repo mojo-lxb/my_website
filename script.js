@@ -126,3 +126,16 @@ animateProgressBar();
 
 // Trigger the animation when scrolling
 window.addEventListener('scroll', animateProgressBar);
+
+
+/***************** Submit Button *********************/
+
+function submit() {
+  let sub = document.querySelector("#suBtn");
+  let captcha = document.querySelector('div[data-netlify-recaptcha="true"]');
+  if (captcha.value === "true") {
+    sub.style.display = "block";
+  } else {
+    sub.style.display = "none";
+  }
+}
