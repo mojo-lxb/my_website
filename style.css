@@ -594,6 +594,9 @@ form input,textarea,label{
     margin:25px auto;
     width: 105px;
 }
+#catpcha{
+    margin: auto;
+}
 /************** GOOGLE MAP *******************/
 
 #littleMap{

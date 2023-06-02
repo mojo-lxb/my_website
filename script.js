@@ -129,11 +129,10 @@ window.addEventListener('scroll', animateProgressBar);
 
 
 /***************** Submit Button *********************/
-
-function check() {
+function submit() {
   let sub = document.querySelector("#suBtn");
-  let captcha = document.querySelector('div[data-netlify-recaptcha="true"]');
-  if (captcha.value === "true") {
+  let captcha = document.querySelector('#catpcha');
+  if (captcha.value !== "") {
     sub.style.display = "block";
   } else {
     sub.style.display = "none";
