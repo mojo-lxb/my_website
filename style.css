@@ -131,9 +131,11 @@ color: #26f4f4;
     position: relative;
     padding: 10px;
     text-decoration: none;
+    padding-top: 0px;
     font-size: 18px;
     font-weight: 600;
-  }
+    display: block;
+}
 
 /*********************** Text Box **************************/
 
@@ -651,6 +653,18 @@ li{
     display: flex;
     bottom: 0px;
 }
+#fadeUp{
+    width: "";
+}
+.navbar{
+    height: 60px;
+}
+.navbar img{
+    width: 68px;
+}
+main{
+    margin-top: 20px;
+}
   /********* Progress Bar *********/
   /*.progressBar ul{
     display:block;
@@ -673,11 +687,10 @@ li{
         position: absolute;
         overflow: hidden;
         right: 0px;
-        top: 85px;
+        top:60px;
         background-color: #333;
         border-radius: 0px 0px 0px 20px;
         width: 20vh;
-        height: 17vh;
         text-align: center;
         z-index: 1;
     }
@@ -794,10 +807,13 @@ li{
         left: 0;
         background-color:#26f4f4;
         transform-origin: bottom right;
-        transition: transform 0.3s ease-out;
+        transition: transform 0.4s ease-out;
     }
     .topnav a:hover::after {
         transform: scaleX(1);
         transform-origin: bottom left;
+    }
+    .topnav a{
+        display:inline;
     }
 }
