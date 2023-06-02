@@ -130,7 +130,7 @@ color: #26f4f4;
     text-decoration: none;
     color: white;
 }
-  .topnav {
+.topnav {
     display: block;
     position: relative;
     overflow:"";
@@ -139,8 +139,8 @@ color: #26f4f4;
     top: 0px;
     text-align: center;
     z-index: 1;
-  }
-  .topnav a {
+}
+.topnav a {
     color: white;
     position: relative;
     padding: 10px;
@@ -150,9 +150,7 @@ color: #26f4f4;
     font-weight: 600;
     display: block;
 }
-
 /*********************** Text Box **************************/
-
 .text{
     padding: 25px;
     color: rgb(240, 240, 240);
@@ -176,7 +174,7 @@ h4{
     }        
 }
   /*************** INTRO ****************/
-  .introFade {
+.introFade {
     margin: auto;
     position: absolute;
     font-family:'Source Code Pro', monospace,sans-serif;
@@ -185,7 +183,7 @@ h4{
     top: 40%;
     transform: translate(-50%, -50%);
     z-index: 1;
-  }
+}
 .intro h3{
     display: flex;
     align-items: end;
@@ -198,9 +196,7 @@ h1 span{
     margin: auto;
     display: flex;
 }
-
 /*********************** AUTOMATIC SLIDER *******************************/
-
 
 /*************** HEAD SLIDE *******************/
 .headSlider{
@@ -227,7 +223,6 @@ h1 span{
 img {
     vertical-align: middle;
 }
-
 /* Slideshow container */
 .slideshow-container {
     /* max-width: 1200px; */
@@ -238,7 +233,6 @@ img {
     overflow: hidden;
     animation: fade 4s ease-in both;
 }
-
 /* Caption text */
 .textSlider {
   color: #f2f2f2;
@@ -276,7 +270,6 @@ img {
     animation: fadeDown 2s ease-in both;
     animation-delay: 4s;
 }
-
 #fadeDown{
     position: absolute;
     padding: 10px;
@@ -289,16 +282,15 @@ img {
     padding: 3px;
     margin-right: 10px;
 }
-
 @keyframes fadeDown {
 from {
     opacity: 0;
     transform: translate3d(0, +50%, 0);
-}
+    }
 to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
-}
+    }
 }
 /************************ Fade up *****************************/
 #fadeUp {
@@ -317,7 +309,7 @@ to {
 from {
     opacity: 0;
     transform: translate3d(0,-80%, 0);
-}
+    }
 to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -526,16 +518,13 @@ h4{
     background:#26f4f4;
     z-index: 1;
 }
-
 .tooltip{
     font-size: 15px;
-    
 }
 .skill-per.progress-animate {
     animation: progress 0.8s ease-in-out forwards;
     opacity: 0;
   }
-  
 /****************** Certificates **********************/
 
 #certif ul{
@@ -626,7 +615,6 @@ form input,textarea,label{
     margin: auto;
 }
 /************** GOOGLE MAP *******************/
-
 #littleMap{
     margin: auto;
     padding: 30px;
@@ -635,7 +623,6 @@ form input,textarea,label{
     display:none;
     padding: 30px;
 }
-
 /***************** FOOTER ************************/
 footer{
     background-color: rgb(30, 30, 30);
@@ -793,9 +780,9 @@ li{
         }
 }
  /********* MAIN CONTENT *********/
- .text{
+.text{
     margin: auto;
- }
+}
 
 /****************************** MEDIA QUERY DESKTOP  *******************************************/
 
