@@ -653,8 +653,17 @@ li{
     display: flex;
     bottom: 0px;
     position: absolute;
-    bottom: -35vh;
-    left: 2%;
+    bottom: -35vh!important;
+    left: 2%!important;
+    }
+    .navbar{
+        height: 60px;
+    }
+    .navbar img{
+        width: 68px;
+    }
+    main{
+        margin-top: 20px;
     }
     .navbar{
         height: 60px;
@@ -668,8 +677,8 @@ li{
     #fadeUp{
     width: "";
     position: absolute;
-    left: 12%;
-    bottom: -30vh;
+    left: 12%!important;
+    bottom: -30vh !important;
     }
   /********* Progress Bar *********/
   /*.progressBar ul{
@@ -680,7 +689,7 @@ li{
   }
 /****************************** MEDIA QUERY IPAD  *******************************************/
 
-@media screen and (max-width: 850px){
+@media only screen and (max-width: 850px){
     .headSlider{
         min-width: 400px;
     }
@@ -775,6 +784,7 @@ li{
         column-count: 4 !important;
     }
     main{
+        margin: auto;
         display: flex;
         justify-content: center;
         max-width:1200px;
