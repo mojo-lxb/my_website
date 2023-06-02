@@ -658,13 +658,7 @@ li{
     .textSlider {
       font-size: 11px
     }
-    #fadeDown {
-    display: flex;
-    bottom: 0px;
-    position: absolute;
-    bottom: -35vh!important;
-    left: 1%!important;
-    }
+
     .navbar{
         height: 60px;
     }
@@ -680,6 +674,13 @@ li{
     left: 12%!important;
     bottom: -30vh !important;
     }
+    #fadeDown {
+    display: flex;
+    bottom: 0px;
+    position: absolute;
+    bottom: -35vh!important;
+    left: 1%!important;
+    }
   /********* Progress Bar *********/
   /*.progressBar ul{
     display:block;
@@ -687,7 +688,7 @@ li{
     }*/
     #arrow {
         position: absolute;
-        left: 50%;
+        left: 50% ;
         bottom: -200%;
         }
 }
@@ -725,18 +726,18 @@ li{
     #arrow{
         bottom: -30vh;
     }
-
+    #fadeUp{
+        position: absolute;
+        left: 12%;
+        bottom: -60vh;
+    }
     #fadeDown {
         display: flex;
         position: absolute;
-        bottom: -49vh;
-        left: 13%;
+        bottom: -60vh;
+        left: -8%;
     }
-    #fadeUp{
-        position: absolute;
-        left: 23%;
-        bottom: -45vh;
-    }
+
     /**************** Intro box **********************/
 
     .fs-box{
