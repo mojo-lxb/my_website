@@ -653,8 +653,8 @@ li{
     display: flex;
     bottom: 0px;
     position: absolute;
-    bottom: -35vh;
-    left: 2%;
+    bottom: -35vh!important;
+    left: 2%!important;
     }
     .navbar{
         height: 60px;
@@ -668,8 +668,8 @@ li{
     #fadeUp{
     width: "";
     position: absolute;
-    left: 12%;
-    bottom: -30vh;
+    left: 12%!important;
+    bottom: -30vh !important;
     }
   /********* Progress Bar *********/
   /*.progressBar ul{
