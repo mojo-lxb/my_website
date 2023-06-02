@@ -185,6 +185,18 @@ h1 span{
     width: 100%;
     position: relative;
 }
+#arrow {
+    position: absolute;
+    left: 50%;
+    bottom: -250%;
+    /*
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50px;
+    z-index: 99;
+*/
+}
 .mySlides {
     display: none;
     filter: grayscale(0.8);
@@ -290,16 +302,16 @@ to {
     }
 
 /*********************** Dark mode **************************/
-.dark-mode {
+/*.dark-mode {
     background-color:rgb(201, 201, 201);
     color: rgb(0, 0, 0);
 }
-/*.dark-mode p,h1,h2,h3,ul,li,label .title{
+.dark-mode p,h1,h2,h3,ul,li,label .title{
     color: black;
-}*/
+}
 #dark-mode .content {
     color:rgb(30, 30, 30);
-}
+}*/
 /************** Photo box ******************/
 
 .container .fs-box{
@@ -623,6 +635,10 @@ li{
     .textSlider {
       font-size: 11px
   }
+  #fadeDown {
+    display: flex;
+    bottom: 0px;
+}
   /********* Progress Bar *********/
   /*.progressBar ul{
     display:block;
@@ -647,14 +663,20 @@ li{
         right: 0px;
         top: 85px;
         background-color: #333;
-        width: 150px;
-        padding: 0px 10px 10px;
+        border-radius: 0px 0px 0px 20px;
+        width: 20vh;
+        height: 17vh;
         text-align: center;
         z-index: 1;
+    }
+    .topnav a:hover{
+        color: #26f4f4;
+
     }
     
     #fadeDown {
         display: flex;
+        bottom: 0px;
 }
     /**************** Intro box **********************/
 
