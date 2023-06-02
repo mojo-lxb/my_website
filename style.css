@@ -702,8 +702,12 @@ li{
     display:block;
     column-count: 2;
     }*/
-
-  }
+    #arrow {
+        position: absolute;
+        left: 50%;
+        bottom: -200%;
+        }
+}
 /****************************** MEDIA QUERY IPAD  *******************************************/
 
 @media only screen and (max-width: 850px){
