@@ -726,13 +726,13 @@ li{
     #fadeDown {
         display: flex;
         position: absolute;
-        bottom: -35vh;
-        left: -4%;
+        bottom: -45vh;
+        left: 13%;
     }
     #fadeUp{
         position: absolute;
-        left: 15%;
-        bottom: -35vh;
+        left: 23%;
+        bottom: -45vh;
     }
     /**************** Intro box **********************/
 
