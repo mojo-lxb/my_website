@@ -590,6 +590,7 @@ form input,textarea,label{
     border-radius: 5px;
 }
 #suBtn{
+    display: hidden;
     margin:25px auto;
     width: 105px;
 }
