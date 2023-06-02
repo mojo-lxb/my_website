@@ -131,9 +131,11 @@ color: #26f4f4;
     position: relative;
     padding: 10px;
     text-decoration: none;
+    padding-top: 0px;
     font-size: 18px;
     font-weight: 600;
-  }
+    display: block;
+}
 
 /*********************** Text Box **************************/
 
@@ -677,7 +679,7 @@ li{
         background-color: #333;
         border-radius: 0px 0px 0px 20px;
         width: 20vh;
-        height: 17vh;
+        
         text-align: center;
         z-index: 1;
     }
@@ -685,11 +687,21 @@ li{
         color: #26f4f4;
 
     }
-    
+    .introFade
+    {
+        position: relative;
+    }
+
     #fadeDown {
         display: flex;
+        position: absolute;
         bottom: 0px;
-}
+        left: -80%;
+    }
+    #fadeUp{
+        position: absolute;
+        left: 10%;
+    }
     /**************** Intro box **********************/
 
     .fs-box{
@@ -794,10 +806,13 @@ li{
         left: 0;
         background-color:#26f4f4;
         transform-origin: bottom right;
-        transition: transform 0.3s ease-out;
+        transition: transform 0.4s ease-out;
     }
     .topnav a:hover::after {
         transform: scaleX(1);
         transform-origin: bottom left;
+    }
+    .topnav a{
+        display:inline;
     }
 }
