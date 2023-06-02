@@ -130,7 +130,7 @@ window.addEventListener('scroll', animateProgressBar);
 
 /***************** Submit Button *********************/
 
-function submit() {
+function check() {
   let sub = document.querySelector("#suBtn");
   let captcha = document.querySelector('div[data-netlify-recaptcha="true"]');
   if (captcha.value === "true") {

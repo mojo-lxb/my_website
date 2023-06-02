@@ -9,12 +9,15 @@
     <link rel="icon" href="img\little icon.PNG" type="">
     <!-- FONT ASWOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Google catpcha -->
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
     <!-- icon for the Title-->
     <link rel="icon" type="image/x-icon" href="">
+    <!-- CSS link -->
     <link rel="stylesheet" href="style.css"/>
     <!--********** DARK MODE **********-->
     <meta name="color-scheme" content="ligth">
@@ -308,7 +311,7 @@
             <span id="error-message">    
             </span>
             <div data-netlify-recaptcha="true"></div>
-            <button id="suBtn" type="submit">Submit</button>
+    <button id="suBtn" type="submit" onclick="submit()">Submit</button>
         </form>
     </section> 
            <!-- ************ Google Map **************** -->
