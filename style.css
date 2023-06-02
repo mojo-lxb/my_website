@@ -641,18 +641,25 @@ li{
 /************************** MEDIA QUERY MOBILE *****************************/
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 450px) {
 
     .introFade {
         font-size: 10px !important;
     }
     .textSlider {
       font-size: 11px
-  }
-  #fadeDown {
+    }
+    #fadeDown {
     display: flex;
-    bottom: 0px;
-}
+    position: absolute;
+    bottom: -35vh;
+    left: 2%;
+    }
+    #fadeUp{
+    position: absolute;
+    left: 12%;
+    bottom: -30vh;
+    }
   /********* Progress Bar *********/
   /*.progressBar ul{
     display:block;
@@ -695,12 +702,13 @@ li{
     #fadeDown {
         display: flex;
         position: absolute;
-        bottom: 0px;
-        left: -80%;
+        bottom: -35vh;
+        left: -4%;
     }
     #fadeUp{
         position: absolute;
-        left: 10%;
+        left: 15%;
+        bottom: -35vh;
     }
     /**************** Intro box **********************/
 
