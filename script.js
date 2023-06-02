@@ -129,7 +129,7 @@ window.addEventListener('scroll', animateProgressBar);
 
 
 /***************** Submit Button *********************/
-function submit() {
+function check() {
   let sub = document.querySelector("#suBtn");
   let captcha = document.querySelector('#catpcha');
   if (captcha.value !== "") {
@@ -138,3 +138,5 @@ function submit() {
     sub.style.display = "none";
   }
 }
+
+

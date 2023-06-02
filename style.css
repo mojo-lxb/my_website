@@ -6,6 +6,12 @@
     padding: 0;
     border: 0;
 }
+hr{
+    background-color: #26f4f4;
+    height: 2px;
+    margin: auto;
+    width: 50%;
+}
 /*********************** Content Box **************************/
 
 main{
@@ -552,7 +558,10 @@ li {
     padding: 30px;
 }
 #projects p{
-    padding-bottom: 30px;
+    margin: auto;
+    width: 75%;
+    padding:15px;
+    text-align: start;
 }
 /***************** Contact Form **************************/
 .contactIcon{
