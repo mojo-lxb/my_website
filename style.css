@@ -73,9 +73,10 @@ main{
     min-width: 400px; 
 }
 #cv{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  padding: 20px;
 }
 /************ BUTTONS ******************/
 button{
@@ -87,6 +88,9 @@ button{
     border-radius: 10px;
 }
 .btn{
+    margin: 25px;
+}
+.backBtn{
     margin: 25px;
 }
 button:hover{
