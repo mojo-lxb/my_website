@@ -722,11 +722,14 @@ li{
     {
         position: relative;
     }
+    #arrow{
+        bottom: -30vh;
+    }
 
     #fadeDown {
         display: flex;
         position: absolute;
-        bottom: -45vh;
+        bottom: -49vh;
         left: 13%;
     }
     #fadeUp{
@@ -847,5 +850,8 @@ li{
     }
     .topnav a{
         display:inline;
+    }
+    #arrow{
+        left: 47%;
     }
 }
