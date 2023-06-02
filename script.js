@@ -65,13 +65,13 @@ function fadeIn() {
     let intervalID = setInterval(function() {
   
         if (opacity <= 1) {
-            opacity = opacity + 0.05
+            opacity = opacity + 0.1
             fade.style.opacity = opacity;
 
         } else {
             clearInterval(intervalID);
         }
-    },2000);
+    },100);
 } 
 
 
