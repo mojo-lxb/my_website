@@ -16,6 +16,8 @@
     <!-- icon for the Title-->
     <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="style.css"/>
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--********** DARK MODE **********-->
     <meta name="color-scheme" content="ligth">
 </head> 
@@ -290,7 +292,7 @@
        
     <section class="contentBox" id="contact">
         <h3 class="headings">&ltContact/&gt</h3>
-        <form id="form" action="action.php" method="POST">
+        <form id="form" action="mailto:ch.maurice@hotmail.com" method="POST">
             <label>First Name</label>
             <input type="text" id="firstName" placeholder="First name" required />
             <span id="error-first"></span>
@@ -307,6 +309,7 @@
             <p class="message"></p>
             <span id="error-message">    
             </span>
+            <div class="g-recaptcha" data-sitekey="6LeRXF8mAAAAAA4LmzCX0F5IItkB7gSoZnzFEk0_"></div>
             <button id="suBtn" type="submit">Submit</button>
         </form>
     </section> 
@@ -334,8 +337,14 @@
 
 <script src="script.js"></script>
 <script src="form_script.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
 
 
+
+
+6LeRXF8mAAAAAA4LmzCX0F5IItkB7gSoZnzFEk0_
