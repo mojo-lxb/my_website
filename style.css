@@ -651,11 +651,22 @@ li{
     }
     #fadeDown {
     display: flex;
+    bottom: 0px;
     position: absolute;
     bottom: -35vh;
     left: 2%;
     }
+    .navbar{
+        height: 60px;
+    }
+    .navbar img{
+        width: 68px;
+    }
+    main{
+        margin-top: 20px;
+    }
     #fadeUp{
+    width: "";
     position: absolute;
     left: 12%;
     bottom: -30vh;
@@ -669,7 +680,7 @@ li{
   }
 /****************************** MEDIA QUERY IPAD  *******************************************/
 
-@media screen and (max-width: 850px){
+@media only screen and (max-width: 850px){
     .headSlider{
         min-width: 400px;
     }
@@ -764,6 +775,7 @@ li{
         column-count: 4 !important;
     }
     main{
+        margin: auto;
         display: flex;
         justify-content: center;
         max-width:1200px;
