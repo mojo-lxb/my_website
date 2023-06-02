@@ -641,30 +641,36 @@ li{
 /************************** MEDIA QUERY MOBILE *****************************/
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 450px) {
 
     .introFade {
         font-size: 10px !important;
     }
     .textSlider {
       font-size: 11px
-  }
-  #fadeDown {
+    }
+    #fadeDown {
     display: flex;
     bottom: 0px;
-}
-#fadeUp{
+    position: absolute;
+    bottom: -35vh;
+    left: 2%;
+    }
+    .navbar{
+        height: 60px;
+    }
+    .navbar img{
+        width: 68px;
+    }
+    main{
+        margin-top: 20px;
+    }
+    #fadeUp{
     width: "";
-}
-.navbar{
-    height: 60px;
-}
-.navbar img{
-    width: 68px;
-}
-main{
-    margin-top: 20px;
-}
+    position: absolute;
+    left: 12%;
+    bottom: -30vh;
+    }
   /********* Progress Bar *********/
   /*.progressBar ul{
     display:block;
@@ -687,10 +693,11 @@ main{
         position: absolute;
         overflow: hidden;
         right: 0px;
-        top:60px;
+        top: 65px;
         background-color: #333;
         border-radius: 0px 0px 0px 20px;
         width: 20vh;
+        
         text-align: center;
         z-index: 1;
     }
@@ -698,11 +705,22 @@ main{
         color: #26f4f4;
 
     }
-    
+    .introFade
+    {
+        position: relative;
+    }
+
     #fadeDown {
         display: flex;
-        bottom: 0px;
-}
+        position: absolute;
+        bottom: -35vh;
+        left: -4%;
+    }
+    #fadeUp{
+        position: absolute;
+        left: 15%;
+        bottom: -35vh;
+    }
     /**************** Intro box **********************/
 
     .fs-box{
