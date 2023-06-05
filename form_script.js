@@ -59,7 +59,7 @@ function validate(event) {
   }
 
   if (firstNameValid && lastNameValid && mailValue !== '' && mailValid && messageValid && !bad) {
-    myForm.innerHTML = 'Form sent.';
+    myForm.innerHTML = 'Sorry form ist not available.';
   }
 }
 
