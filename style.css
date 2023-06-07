@@ -18,12 +18,14 @@ main{
     margin: auto;
     background: rgb(30, 30, 30);
     border-radius: 7px;
-    min-width: 400px;
 }
 .text{
     padding: 25px;
     color: white;
-} 
+}
+.text span{
+    color:#26f4f4;
+}
 body {
     color: #ffffff;
     background-color: rgb(11, 11, 11);
@@ -61,16 +63,15 @@ h1,h2, h3{
     margin: 50px auto;
     background: rgb(30, 30, 30);
     border-radius: 0 0 6px 6px;
-    min-width: 400px; 
     max-width: 1200px;
     text-align: center;
 }
 main{
     margin: auto;
+    margin-top: 20px;
     background: rgb(30, 30, 30);
     box-shadow: 0px 15px 20px black;
     border-radius: 0 0 6px 6px;
-    min-width: 400px; 
 }
 #cv{
   display: grid;
@@ -111,7 +112,7 @@ color: #26f4f4;
     content: "lightmode";
     color: #1E1E1E;
 }
-/********** DROP DOWN **************/
+/********** NavBar **************/
 .navbar {
     position: fixed;
     display: flex;
@@ -120,29 +121,34 @@ color: #26f4f4;
     padding: 0px 30px;
     width: 100%;
     background: black;
-    height: 85px;
-    min-width: 300px;
+    height: 60px;
     z-index: 3;
     box-shadow: 0 15px 25px #121212;
 }
+.navbar img{
+    width: 68px;
+}
+/********** Burger Menu **************/
 .dropDown{
     align-self: center;
     margin-right: 25px;  
 }
-.icon{
-    display: none;
+.burger{
+    display:block;
     text-decoration: none;
     color: white;
 }
 .topnav {
-    display: block;
-    position: relative;
-    overflow:"";
-    background-color: black;
+    display: none;
     right: 0px;
-    top: 0px;
     text-align: center;
     z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    top: 60px;
+    background-color: #333;
+    border-radius: 0px 0px 0px 20px;
+    width: 20vh;
 }
 .topnav a {
     color: white;
@@ -153,6 +159,13 @@ color: #26f4f4;
     font-size: 18px;
     font-weight: 600;
     display: block;
+}   
+.topnav a:first-child{
+    padding-top: 10px;
+}
+.topnav a:hover{
+    color: #26f4f4;
+
 }
 /*********************** Text Box **************************/
 .text{
@@ -182,7 +195,7 @@ h4{
     margin: auto;
     position: absolute;
     font-family:'Source Code Pro', monospace,sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     left: 65%;
     top: 40%;
     transform: translate(-50%, -50%);
@@ -208,18 +221,9 @@ h1 span{
     position: relative;
 }
 #arrow {
-    position: absolute;
-    left: 50%;
-    bottom: -37vh;
-    z-index: 99;
-    
-    /*
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 50px;
-    z-index: 99;
-*/
+    width: 100%;
+    text-align: center;
+    margin-top: 36px;
 }
 .mySlides {
     display: none;
@@ -241,7 +245,7 @@ img {
 /* Caption text */
 .textSlider {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 16px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -258,36 +262,52 @@ img {
     from {opacity: 0.4} 
     to {opacity: 1}
 }
-/********************* Fade text intro *************************/
-.introFade{
-    margin: auto;
+/********************* Intro Title *************************/
+.introTitle{
     position: absolute;
     z-index: 1;
-}
-/************************ Fade Down *****************************/
-#fadeDown{
-    margin: auto;
-    background-color: #1E1E1E;
-    margin-bottom: 80px;
-    opacity: 0;
-    margin-top: 60px;
+    width: 100%;
+    top: 60px;
+    padding: 15% 0; 
     text-align: center;
-    animation: fadeDown 2s ease-in both;
-    animation-delay: 4s;
 }
-#fadeDown{
-    position: absolute;
+.main-title{
+    text-align: center;
+    /*font-size: 16px;
+*/}
+.main-title h1{
+    background-color: #1E1E1E;
     padding: 10px;
-    left: -120px;
-    bottom: -40px;
 }
-#fadeDown h3 {
-    display: flex;
-    align-items: end;
-    padding: 3px;
-    margin-right: 10px;
+.introTitle span{
+    color: #26f4f4;
 }
-@keyframes fadeDown {
+.secondary-title{
+    text-align: center;
+    margin-top: 24px;
+    font-size: 16px;
+}
+.secondary-title p{
+    background-color: #1E1E1E;
+    padding: 6px 12px;
+}
+.main-title,
+.secondary-title {
+    display: block;
+}
+.main-title h1,
+.secondary-title p{
+    display: inline-block;
+}
+
+
+/************************ Animation Fade Down *****************************/
+.fadeUp{
+    opacity: 0;
+    animation: fadeUp .7s ease-in both;
+    animation-delay: .2s;
+}
+@keyframes fadeUp {
 from {
     opacity: 0;
     transform: translate3d(0, +50%, 0);
@@ -297,29 +317,27 @@ to {
     transform: translate3d(0, 0, 0);
     }
 }
-/************************ Fade up *****************************/
-#fadeUp {
-    margin: auto;
-    margin-top: 150px;
-    background-color: #1E1E1E;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
+/************************ Animation Fade up *****************************/
+.fadeDown {
     opacity: 0;
-    animation: fadeUp 1s ease-in both;
-    animation-delay: 3s;
+    animation: fadeDown .5s ease-in both;
+    animation-delay: .4s;
 }
 
-@keyframes fadeUp {
-from {
-    opacity: 0;
-    transform: translate3d(0,-80%, 0);
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -50%, 0);
+        }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
-to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
 }
-    }
+
+/************************ Main Titles *****************************/   
+
+
 
 /*********************** Dark mode **************************/
 /*.dark-mode {
@@ -342,7 +360,7 @@ to {
 }
 #introduction{
     margin: auto;
-    padding: 50px;
+    padding: 50px 0;
 }
 .imgBox{
     position: absolute;
@@ -352,7 +370,6 @@ to {
     height: 100%;
     z-index: 2;
     transition: all 0.9s ease-in-out;
-    /*background-image: url(img/photo-cv.png) ; /*** DARK MODE IMG ***/
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -361,9 +378,7 @@ to {
     object-fit: cover;
     resize: both;
 }
-.container .fs-box:hover .imgBox{
-    transform:translate(-1.5rem,-3.5rem);
-}
+
 .content{
     text-align: center;
     padding: 10px;
@@ -387,6 +402,9 @@ to {
     width: 16rem;
     height: 19.5rem;
 }
+ .text{
+    margin: auto;
+}
 /****************** Text about me **********************/
 .text :nth-child(1){
     padding-bottom: 10px;
@@ -399,7 +417,6 @@ h4{
 .strength{
     display:none;
     font-family: Arial, Helvetica, sans-serif;
-    min-width: 400px;
     max-width: 1200px;
     margin-top: 25px;
     background-color:rgb(30, 30, 30);
@@ -413,11 +430,12 @@ h4{
 .progressBar{
     margin: auto;
     max-width: 1200px;
-    min-width: 400px;
     box-shadow: 0px 15px 20px black;
 }
 .progressBar ul{
     display:block;
+    padding: 15px;
+    column-count: 2;
     list-style: none;
 }
 .box .skill-box{
@@ -428,7 +446,7 @@ h4{
     display: block;
     font-size: 15px;
     font-weight: 600;
-    color: white;    /*#333;*/
+    color: white;  
 }
 .skill-box .skill-bar{
     height: 10px;
@@ -447,6 +465,7 @@ h4{
     animation: progress 0.8s ease-in-out forwards; 
     opacity: 0;
 }
+
 /******* HTML ProgressBar ********/
 .skill-per.html{
     width: 75%;
@@ -522,7 +541,7 @@ h4{
     border-radius: 3px;
     background:#26f4f4;
     z-index: 1;
-}
+}*/
 .tooltip{
     font-size: 15px;
 }
@@ -550,7 +569,6 @@ li {
 /******************* Hobby **************************/
 .contentBox{
     margin: 50px auto;
-    min-width: 400px;
     max-width: 1200px;
     background-color: rgb(30, 30, 30);
     box-shadow: 0px 15px 20px black;
@@ -586,7 +604,6 @@ li {
 /************** Contact *******************/
 #contact{
     margin: 50px auto;
-    min-width: 400px;
     max-width: 1200px;
     background-color:rgb(30, 30, 30);
     border-radius: 7px;
@@ -595,7 +612,6 @@ li {
     display: grid;
     text-align: start;
     padding: 15px;
-    min-width: 400px;
     max-width: 1200px;
 }
 form span{
@@ -647,97 +663,23 @@ li{
     padding: 10px;
 }
 
-/************************** MEDIA QUERY MOBILE *****************************/
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 450px) {
-
-    .introFade {
-        font-size: 10px !important;
-    }
-    .textSlider {
-      font-size: 11px
-    }
-
-    .navbar{
-        height: 60px;
-    }
-    .navbar img{
-        width: 68px;
-    }
-    main{
-        margin-top: 20px;
-    }
-    #fadeUp{
-    width: "";
-    position: absolute;
-    left: 12%!important;
-    bottom: -30vh !important;
-    }
-    #fadeDown {
-    display: flex;
-    bottom: 0px;
-    position: absolute;
-    bottom: -35vh!important;
-    left: 1%!important;
-    }
-  /********* Progress Bar *********/
-  /*.progressBar ul{
-    display:block;
-    column-count: 2;
-    }*/
-    #arrow {
-        position: absolute;
-        left: 50% ;
-        bottom: -200%;
-        }
-}
 /****************************** MEDIA QUERY IPAD  *******************************************/
+                /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (max-width: 850px){
-    .headSlider{
-        min-width: 400px;
-    }
-
-    .icon{
-        display: block;
-    }
-    .topnav{
-        display: none;
-        position: absolute;
-        overflow: hidden;
-        right: 0px;
-        top: 65px;
-        background-color: #333;
-        border-radius: 0px 0px 0px 20px;
-        width: 20vh;
-        
-        text-align: center;
-        z-index: 1;
-    }
-    .topnav a:hover{
-        color: #26f4f4;
-
-    }
-    .introFade
-    {
+@media screen and (min-width: 768px) {
+    .introFade{
         position: relative;
     }
-    #arrow{
-        bottom: -30vh;
+    .introTitle{
+        top:85px;
+        padding: 15% 0;
     }
-    #fadeUp{
-        position: absolute;
-        left: 12%;
-        bottom: -60vh;
+    .main-title,
+    .secondary-title {
+        font-size: 22px;
     }
-    #fadeDown {
-        display: flex;
-        position: absolute;
-        bottom: -60vh;
-        left: -8%;
-    }
-
+ 
     /**************** Intro box **********************/
 
     .fs-box{
@@ -779,14 +721,10 @@ li{
             padding: 15px 20px;
         }
 }
- /********* MAIN CONTENT *********/
-.text{
-    margin: auto;
-}
 
 /****************************** MEDIA QUERY DESKTOP  *******************************************/
-
-@media screen and (min-width: 850px){
+                /* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
     .progressBar ul{
         display: block;
         column-count: 4 !important;
@@ -797,29 +735,85 @@ li{
         justify-content: center;
         max-width:1200px;
     }
-      /*********** Fade Welcome text *************/
-      .introFade {
+      /*********** intro Title *************/
+      .introTitle {
         margin: auto;
-        font-size: 35px !important;
-        left: 40%;
-        top: 55%;
+        font-size: 35px;
     }
-    #fadeUp {
-        position: relative;
-        display: inline;
+    .main-title,
+    .secondary-title {
+        font-size: 32px;
     }
-    #fadeDown {
-        position: absolute;
-        display: flex;
-        left: 0px;
-        bottom: 0px;
+    .secondary-title.fadeUp {
+        margin-top: 50px;
     }
+    #arrow {
+        margin-top: 94px;
+    }
+
   /*************** INTRO ****************/
     .intro h3{
         display: flex;
         align-items: end;
         font-size: 15px;
     }
+    /************** Photo box ******************/
+
+.container .fs-box{
+    position:relative ;
+    width: 16rem;
+    height: 19.5rem;
+    margin: auto;
+}
+#introduction{
+    margin: auto;
+    padding: 50px 0 50px 50px;
+}
+.imgBox{
+    position: absolute;
+    top: 30px; /* to 0 for media Q */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.9s ease-in-out;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16rem;
+    height: 19.5rem;
+    object-fit: cover;
+    resize: both;
+}
+.container .fs-box:hover .imgBox{
+    transform:translate(-1.5rem,-3.5rem);
+}
+.content{
+    text-align: center;
+    padding: 10px;
+}
+.content h2{
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+    font-style: italic;
+}
+.fs-box{
+    align-items: end;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+.imgBox{
+    top: 0px; 
+}
+#dark-mode{
+    width: 16rem;
+    height: 19.5rem;
+}
+ .text{
+    margin: auto;
+}
       /*************** Localisation****************/
 #littleMap{
         display: none;
@@ -833,6 +827,25 @@ li{
         padding: 25px 40px;
     }
       /****** Underline Hover effect *******/
+
+      .dropDown{
+        display: block;
+      }
+      .burger{
+        display:none;
+      }
+      .topnav {
+        display:contents;
+        right: 0px;
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+        overflow: hidden;
+        top: 60px;
+        background-color: #333;
+        border-radius: 0px 0px 0px 20px;
+        width: 20vh;
+    }
     .topnav a::after {
         content: '';
         position: absolute;
@@ -851,8 +864,5 @@ li{
     }
     .topnav a{
         display:inline;
-    }
-    #arrow{
-        left: 47%;
     }
 }
