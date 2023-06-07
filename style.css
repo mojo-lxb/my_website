@@ -224,6 +224,7 @@ h1 span{
     width: 100%;
     text-align: center;
     margin-top: 36px;
+    background-color: rgba(30,30,30,.6);
 }
 .mySlides {
     display: none;
@@ -276,7 +277,7 @@ img {
     /*font-size: 16px;
 */}
 .main-title h1{
-    background-color: #1E1E1E;
+    background-color: rgba(30,30,30,.6);
     padding: 10px;
 }
 .introTitle span{
@@ -288,7 +289,7 @@ img {
     font-size: 16px;
 }
 .secondary-title p{
-    background-color: #1E1E1E;
+    background-color: rgba(30,30,30,.6);
     padding: 6px 12px;
 }
 .main-title,
@@ -304,8 +305,8 @@ img {
 /************************ Animation Fade Down *****************************/
 .fadeUp{
     opacity: 0;
-    animation: fadeUp .7s ease-in both;
-    animation-delay: .2s;
+    animation: fadeUp .8s ease-in both;
+    animation-delay: .3s;
 }
 @keyframes fadeUp {
 from {
@@ -320,8 +321,8 @@ to {
 /************************ Animation Fade up *****************************/
 .fadeDown {
     opacity: 0;
-    animation: fadeDown .5s ease-in both;
-    animation-delay: .4s;
+    animation: fadeDown .6s ease-in both;
+    animation-delay: .5s;
 }
 
 @keyframes fadeDown {
@@ -748,7 +749,13 @@ li{
         margin-top: 50px;
     }
     #arrow {
-        margin-top: 94px;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        margin-top: 36px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 50px;
     }
 
   /*************** INTRO ****************/
