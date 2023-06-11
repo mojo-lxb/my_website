@@ -223,7 +223,7 @@ h1 span{
 .arrow {
     font-size: 32px;
     display: inline-block;
-    transform: rotate(90deg);
+    transform: rotate(90deg)!important;
     text-align: center;
     padding: 5px 10px;
     border-radius: 50%;
