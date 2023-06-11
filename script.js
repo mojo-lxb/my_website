@@ -138,5 +138,22 @@ function check() {
     sub.style.display = "none";
   }
 }
+/***************** smoothscroll anchor *********************/
+document.addEventListener('click', function(event) {
+  var target = event.target;
 
+  if (target.tagName.toLowerCase() === 'a' && target.getAttribute('href')) {
+    event.preventDefault();
+
+    var href = target.getAttribute('href');
+    var destination = document.querySelector(href);
+
+    if (destination) {
+      destination.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+});
 

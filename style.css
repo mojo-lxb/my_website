@@ -220,9 +220,13 @@ h1 span{
     width: 100%;
     position: relative;
 }
-#arrow {
-    width: 100%;
+.arrow {
+    font-size: 32px;
+    display: inline-block;
+    transform: rotate(90deg);
     text-align: center;
+    padding: 5px 10px;
+    border-radius: 50%;
     margin-top: 36px;
     background-color: rgba(30,30,30,.6);
 }
@@ -748,7 +752,7 @@ li{
     .secondary-title.fadeUp {
         margin-top: 50px;
     }
-    #arrow {
+    /*.arrow {
         width: 80px;
         height: 80px;
         text-align: center;
@@ -756,7 +760,7 @@ li{
         padding-top: 40px;
         padding-bottom: 40px;
         border-radius: 50px;
-    }
+    }*/
 
   /*************** INTRO ****************/
     .intro h3{
