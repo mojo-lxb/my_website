@@ -217,7 +217,7 @@ h1 span{
 .arrow {
     font-size: 32px;
     display: inline-block;
-    transform: rotate(180deg)!important;
+    transform: rotate(90deg)!important;
     text-align: center;
     padding: 5px 10px;
     border-radius: 50%;
@@ -555,6 +555,9 @@ h4{
   }
 /****************** Certificates **********************/
 
+#certif div{
+    padding-top: 25px;
+}
 #certif ul{
     display: flex;
     column-count: 2;
@@ -595,8 +598,13 @@ li {
 #projects p{
     margin: auto;
     width: 75%;
-    padding:15px;
     text-align: start;
+}
+.weeWander{
+padding-top: 40px;
+}
+.figma{
+    padding-top: 40px;
 }
 /***************** Contact Form **************************/
 .contactIcon{
