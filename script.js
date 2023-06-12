@@ -140,13 +140,13 @@ function check() {
 }
 /***************** smoothscroll anchor *********************/
 document.addEventListener('click', function(event) {
-  var target = event.target;
+  let target = event.target;
 
   if (target.tagName.toLowerCase() === 'a' && target.getAttribute('href')) {
     event.preventDefault();
 
-    var href = target.getAttribute('href');
-    var destination = document.querySelector(href);
+    let href = target.getAttribute('href');
+    let destination = document.querySelector(href);
 
     if (destination) {
       destination.scrollIntoView({
