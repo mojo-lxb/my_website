@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!-- ICON TITLE -->
+    <link rel="icon" href="img\little icon.PNG" type="">
+    <!-- FONT ASWOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Google catpcha -->
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <!-- icon for the Title-->
+    <link rel="icon" type="image/x-icon" href="">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css"/>
+    <!--********** DARK MODE **********-->
+    <meta name="color-scheme" content="ligth">
+</head> 
+
+<body>
+    
+    <!-- Top Navigation Menu -->
+    <div class="navbar"> 
+        <a href="#home" class="active"><img src="img\little icon.PNG" width="99px"></a>
+        <div class="dropDown">  
+            <a href="javascript:void(0);" class="burger" onclick="drop()"><i class="fa-solid fa-bars fa-xl"></i></a>
+            <div class="topnav"> 
+                <a href="#home">Home</a>
+                <a href="#introduction">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div> 
+    </div>
+    
+    <header>
+        <!--------------* AUTOMATIC SLIDER *------------------>
+        <article class= "headSlider" id="home">
+            <div class="introTitle">
+                <div class="main-title fadeDown">
+                    <h1><small>junior </small><span>FullStack { </span>Developer <span>}</span></h1>
+                </div>
+                <div class="secondary-title fadeUp">
+                    <p>Hello there! <span> I'm Maurice</span></p>
+                </div>
+                <a href="#introduction" class="arrow fadeUp">&#10132;</a> 
+            </div>
+            <section class="intro" style="opacity:0;">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="img/relax.jpg" style="width:100%" grayscale>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/brasil.jpg" style="width:100%" grayscale>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/ocean.jpg"style= "width:100%" grayscale >
+                    </div>
+                </div>
+                <br>                    
+                <!--<div id="lightBtn">
+                        <input type ="checkbox"onclick="myFunction()"/>
+                    </div>--> 
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+            </section>
+        </article>
+        <!-- INTRO -->
+    </header>
+        <!--************* DARK MODE *****************-->
+
+       <!-- <button id="drkbtn" onclick="myFunction()">Dark mode</button>-->
+        <!--******************* Introduction ******************-->
+    <main>
+        <section id="introduction">
+            <div class="container">
+                <div class="fs-box">
+                    <div class="imgBox">  
+                      <img id="dark-mode" src="img/photo-cv.png"  width="14.3rem" height="19.5rem" />
+                    </div>
+                    <div class="content">
+                        <h2>Maurice Christine <br>
+                            <span> FullStack Dev</span>
+                        </h2> 
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="contactIcon">
+                <i class="fa-solid fa-mobile"style="color: #26f4f4;"></i>
+                <i class="fa-solid fa-envelope" style="color: #26f4f4;"></i>
+                <i class="fa-solid fa-code"style="color: #26f4f4;"></i>
+                <i class="fa-solid fa-house" style="color: #26f4f4;"></i>
+            </div> -->
+        </section>
+        <section class="text" id="me">
+            <strong><p >Hello there! <span> I'm Maurice</span></p></strong>
+            <p class="paragraph" style="--d:0s">As an experienced hydraulic mechanic, </br>
+                I have recently taken the opportunity to pursue a full-stack developer training program, 
+                which aligns with my long-standing interest in technology and software development. 
+                With a commitment to continuous learning and professional growth, 
+                I am taking steps to achieve my goals and expand my skillset.</p>
+            <div class="btn-more">    
+            </div>
+            <section class="strength">
+                <ul>
+                    <li><i class="fa-solid fa-handshake-simple fa-lg" style="color: #26f4f4;"></i> problem solving</li>
+                    <li><i class="fa-solid fa-thumbs-up fa-lg" style="color: #26f4f4;"></i> motivated</li>
+                    <li><i class="fa-solid fa-shuffle fa-lg" style="color: #26f4f4;"></i> flexibility</li>
+                    <li><i class="fa-solid fa-people-group fa-lg" style="color: #26f4f4;"></i> teamwork</li>
+                    <li><i class="fa-solid fa-stopwatch fa-lg" style="color: #26f4f4;"></i> ponctual</li>
+                    <li><i class="fa-solid fa-sliders fa-lg" style="color: #26f4f4;"></i> adapability</li>
+                </ul>
+            </section>
+            <div class="btn">
+                <button onclick="seeMore()">See more</button> 
+            </div>
+        </section>
+    </main>
+<!--*******************  ProgressBar Skills ******************-->
+    
+    <section class="progressBar">
+        <div class="contentBox" >
+            <h3 class="headings">&ltSkills/&gt</h3>
+            <ul>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">HTML 5</span>
+                        <div class="skill-bar">
+                            <span class="skill-per html"></span>
+                            <span class="tooltip">75%</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">CSS3</span>
+                        <div class="skill-bar">
+                            <span class="skill-per css"></span>
+                            <span class="tooltip">60%</span>
+                        </div>
+                    </div>    
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">Bootstrap</span>
+                        <div class="skill-bar">
+                            <span class="skill-per bootstrap"></span>
+                            <span class="tooltip">70%</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">Javascript</span>
+                        <div class="skill-bar">
+                            <span class="skill-per javascript"></span>
+                            <span class="tooltip">60%</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">React.js</span>
+                        <div class="skill-bar">
+                            <span class="skill-per react"></span>
+                            <span class="tooltip">40%</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">PHP</span>
+                        <div class="skill-bar">
+                            <span class="skill-per php"></span>
+                            <span class="tooltip">60%</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">Laravel</span>
+                        <div class="skill-bar">
+                            <span class="skill-per laravel"></span>
+                            <span class="tooltip">60%</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">MySql</span>
+                        <div class="skill-bar">
+                            <span class="skill-per mysql"></span>
+                            <span class="tooltip">45%</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">Wordpress</span>
+                        <div class="skill-bar">
+                            <span class="skill-per wp"></span>
+                            <span class="tooltip">55%</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">GitHub</span>
+                        <div class="skill-bar">
+                            <span class="skill-per git"></span>
+                            <span class="tooltip">60%</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">Photoshop/Lightoom</span>
+                        <div class="skill-bar">
+                            <span class="skill-per ps"></span>
+                            <span class="tooltip">75%</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-box">
+                        <span class="title">Microsoft Office</span>
+                        <div class="skill-bar">
+                            <span class="skill-per mo"> </span>
+                            <span class="tooltip">80%</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!--******************* Certifications ******************-->
+    
+    <section class="contentBox" id="certif">
+        <h3 class="headings">&ltCertifications/&gt</h3>
+        <div>
+            <p>CERTIFICATE Full Stack developer</p>
+            <p>Bootcamp 2023 by Cap4Lab</p>
+        </div>
+        
+        <ul>
+            <li>CERTIFICATE FIRST AID INSTRUCTION <p>First aid Training (2018)</p></li>
+            <li>CERTIFICATE FIRE SECURITY INSTRUCTION<p>Basic fire security (2016)</p></li>
+        </ul>
+    </section>
+<!--******************* Hobby ******************-->
+     
+    <section class="contentBox" id="hobby">
+        <h3 class="headings">&ltHobby/&gt</h3>
+        <ul>
+            <li>Motorsport</li>
+            <li>Photography</li>
+            <li>DIY/Renovation</li>
+            <li>Traveling</li>
+            <li>Cooking</li>
+            <li>Scuba diving</li>
+        </ul>
+    </section>
+     <!--******************* Projects ******************-->
+    
+    <section class ="contentBox" id="projects">
+        <h3 class="headings">&ltProjects/&gt</h3>
+        <div class="weeWander"> 
+            <h4>Wee Wander project</h4>
+            <p>Welcome to Wee Wander, your go-to platform for hiking, trekking, and mountain biking in Luxembourg. <br>
+                Connect with fellow enthusiasts, create exciting events, and explore the breathtaking natural landscapes. <br>
+                With Wee Wander, you can embark on unforgettable outdoor journeys and arrange carpooling for sustainable travel. <br>
+                Let Luxembourg's nature be your playground. Join Wee Wander today and start your adventure.</p>
+            <a href="https://github.com/mojo-lxb/wee_wander" target="_blank"><img src="img/Capture d’écran 2023-05-30 à 17.22.39 copie.png" width="80%"></a>  
+        </div>  
+        <hr> 
+        <div class="figma"> 
+            <h4>Figma project : Easy Escape</h4>
+            <p>Easy Escape is a premier mobile app that allows users to book first-class flights and high-class hotels worldwide. 
+                Experience luxury travel with seamless booking, personalized recommendations, and exclusive services for an unforgettable journey.<br>
+                Elevate your travel experience with Easy Escape. </p>
+            <a href="https://www.figma.com/proto/tjLmpY7w3j1TTNSV6FDPb9/EasyEscape?node-id=10-100&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A100" target="_blank"><img src="img\figma-pic.JPG" width="80%"></a> 
+        </div> 
+    </section>
+
+       <!-- ************ Contact Form **************** -->
+       
+    <section class="contentBox" id="contact">
+        <h3 class="headings">&ltContact/&gt</h3>
+        <form id="form" data-netlify-recaptcha="true" data-netlify="true" action="action.php" method="POST">
+            <label>First Name</label>
+            <input type="text" id="firstName" placeholder="First name" required />
+            <span id="error-first"></span>
+            <label>Last Name</label>
+            <input type="text" id="lastName" placeholder="Last name" required />
+            <span id="error-last">    
+            </span>
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Your email" required />
+            <span id="error-mail">    
+            </span>
+            <label>Your Message</label>
+            <textarea id="message" placeholder="Your message ..."></textarea>
+            <p class="message"></p>
+            <span id="error-message">    
+            </span>
+            <div data-netlify-recaptcha="true" id="catpcha"></div>
+    <button id="suBtn" type="submit" onclick="check()">Submit</button>
+        </form>
+    </section> 
+           <!-- ************ Google Map **************** -->
+    
+    <section class="contentBox">
+        <h3 class="headings">&ltLocation/&gt</h3>
+        <div>
+            <div id="littleMap" style="text-decoration:none; overflow:hidden;max-width:100%;width:400px;height:200px;">
+                <div  id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                    <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Helmdange+Lorentzweiler,+Luxembourg&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div>
+            </div>
+            <iframe id ="bigMap"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5161.842731324341!2d6.142673428727797!3d49.693453607758485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47955026b90ed85f%3A0x500d1d6d10594c0!2sHelmdange%2C%20Lorentzweiler!5e0!3m2!1sen!2slu!4v1679568857894!5m2!1sen!2slu" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- ************ Footer **************** -->
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/maurice-ch" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #26f4f4;"></i></a></li>
+            <li><a href="#contact" target="_blank"><i class="fa-solid fa-envelope fa-lg" style="color: #26f4f4;"></i></a></li>
+            <li><a href="https://github.com/mojo-lxb"target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #26f4f4;"></i></a></li>
+        </ul>
+    </footer>   
+
+<script src="script.js"></script>
+<script src="form_script.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
+
+
+
